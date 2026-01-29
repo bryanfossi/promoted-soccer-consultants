@@ -42,14 +42,14 @@ export default function Navbar() {
         
         <ul className={`${styles.navLinks} ${mobileMenuOpen ? styles.mobileOpen : ''}`}>
   <li className={styles.dropdown}>
-    <a href="/#services" className={styles.dropdownToggle}>
-      Services <span className={styles.dropdownArrow}>▼</span>
-    </a>
-    <ul className={styles.dropdownMenu}>
-      <li><a href="/club-consulting">Club Consulting</a></li>
-      <li><a href="/fuse-id">FUSE-ID Recruiting Services</a></li>
-    </ul>
-  </li>
+  <a href="/#services" className={styles.dropdownToggle}>
+    Services
+  </a>
+  <ul className={styles.dropdownMenu}>
+    <li><a href="/club-consulting">Club Consulting</a></li>
+    <li><a href="/fuse-id">FUSE-ID Recruiting Services</a></li>
+  </ul>
+</li>
   <li><a href="/#why-us">Why Us</a></li>
   <li><a href="/#resources">Resources</a></li>
   <li><a href="/#about">About</a></li>

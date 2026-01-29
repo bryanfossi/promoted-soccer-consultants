@@ -1,3 +1,19 @@
+.serviceCardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.serviceCardLink:hover {
+  text-decoration: none;
+}
+
+.serviceCardLink p,
+.serviceCardLink h3,
+.serviceCardLink li {
+  text-decoration: none;
+}
+
 .services {
   padding: 6rem 2rem;
   background: var(--light-gray);

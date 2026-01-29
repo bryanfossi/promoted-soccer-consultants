@@ -74,6 +74,27 @@ export default function ClubConsulting() {
                 <li>Expectation-setting frameworks</li>
               </ul>
             </div>
+            <div className={styles.serviceCard}>
+              <h3 className="serif">IT Solutions & Automation</h3>
+              <p>Streamline your club operations with custom technology solutions designed specifically for soccer organizations and high school athletic departments.</p>
+              <ul>
+                <li>Workflow automation</li>
+                <li>Custom website development</li>
+                <li>Registration and payment systems</li>
+                <li>Communication platform integration</li>
+              </ul>
+            </div>
+
+            <div className={styles.serviceCard}>
+              <h3 className="serif">Club Recruiting Services</h3>
+              <p>Comprehensive recruiting support for your entire roster. Every player receives personalized guidance to maximize their college opportunities.</p>
+              <ul>
+                <li>Target school lists for each player</li>
+                <li>12-month recruiting plan</li>
+                <li>Customized player profile resume</li>
+                <li>Club-wide recruiting coordination</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
