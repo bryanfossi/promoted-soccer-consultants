@@ -1,0 +1,50 @@
+.whyUs {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.whyContent {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.whyContent h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--primary-green);
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.whyContent p {
+  font-size: 1.2rem;
+  line-height: 1.9;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.highlightBox {
+  background: var(--light-gray);
+  border-left: 4px solid var(--accent-gold);
+  padding: 2rem 2.5rem;
+  margin-top: 3rem;
+  border-radius: 8px;
+}
+
+.highlightBox p {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .whyContent h2 {
+    font-size: 2.2rem;
+  }
+}

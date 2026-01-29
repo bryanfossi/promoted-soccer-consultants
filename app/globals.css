@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-green: #0d5c3d;
+  --secondary-green: #1a7a50;
+  --accent-gold: #d4a574;
+  --dark-navy: #1a2332;
+  --light-gray: #f8f9fa;
+  --medium-gray: #e5e7eb;
+  --text-dark: #2c3e50;
+  --text-light: #6b7280;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: var(--text-dark);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+.serif {
+  font-family: 'Crimson Pro', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

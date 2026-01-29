@@ -1,0 +1,145 @@
+.hero {
+  margin-top: 80px;
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+  color: white;
+  padding: 5rem 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.heroContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 4rem;
+  align-items: center;
+}
+
+.heroContent {
+  /* Text content on the left */
+}
+
+.heroContent p {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  max-width: 700px;
+  opacity: 0.95;
+  animation: fadeInUp 0.8s ease 0.2s forwards;
+}
+
+.heroLogo {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  animation: fadeInUp 0.8s ease 0.3s forwards;
+  opacity: 0;
+}
+
+.heroContainer h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.heroContainer p {
+  font-size: 1.35rem;
+  line-height: 1.6;
+  max-width: 700px;
+  opacity: 0.95;
+  animation: fadeInUp 0.8s ease 0.2s forwards;
+}
+
+.heroCtas {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 1.5rem;
+  animation: fadeInUp 0.8s ease 0.4s forwards;
+}
+
+.btn {
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.btnPrimary {
+  background: white;
+  color: var(--primary-green);
+}
+
+.btnPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.btnSecondary {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.btnSecondary:hover {
+  border-color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContainer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .heroImageContainer {
+    order: -1; /* Logo appears above on mobile */
+  }
+
+  .heroLogo {
+    max-width: 200px;
+  }
+
+  .heroContent h1 {
+    font-size: 2.5rem;
+  }
+
+  .heroContent p {
+    font-size: 1.1rem;
+  }
+
+  .heroCtas {
+    flex-direction: column;
+  }
+}

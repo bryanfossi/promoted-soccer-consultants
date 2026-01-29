@@ -1,0 +1,66 @@
+.about {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aboutContent {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.aboutContent h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--primary-green);
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.aboutContent p {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: var(--text-dark);
+  margin-bottom: 1.5rem;
+}
+
+.credentials {
+  background: var(--light-gray);
+  padding: 2.5rem;
+  border-radius: 12px;
+  margin-top: 3rem;
+}
+
+.credentials h3 {
+  font-size: 1.6rem;
+  color: var(--primary-green);
+  margin-bottom: 1.5rem;
+}
+
+.credentials ul {
+  list-style: none;
+}
+
+.credentials li {
+  padding: 0.8rem 0;
+  color: var(--text-dark);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.credentials li::before {
+  content: '◆';
+  color: var(--accent-gold);
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .aboutContent h2 {
+    font-size: 2.2rem;
+  }
+}

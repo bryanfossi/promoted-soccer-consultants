@@ -1,0 +1,134 @@
+.resources {
+  padding: 6rem 2rem;
+  background: var(--dark-navy);
+  color: white;
+}
+
+.sectionContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.resourcesContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.resourcesText h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.5px;
+}
+
+.resourcesText h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--accent-gold);
+}
+
+.resourcesText p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  opacity: 0.9;
+  margin-bottom: 1rem;
+}
+
+.resourcesList {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.resourcesList li {
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resourcesList li::before {
+  content: '→';
+  color: var(--accent-gold);
+  font-weight: bold;
+}
+
+/* Newsletter Section */
+.newsletterSection {
+  text-align: center;
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.newsletterSection h3 {
+  font-size: 2rem;
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
+.newsletterSection p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.emailForm {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-dark);
+}
+
+.emailInput:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  background: white;
+}
+
+.subscribeButton {
+  padding: 1rem 2.5rem;
+  background: var(--accent-gold);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.subscribeButton:hover {
+  background: #c89560;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(212, 165, 116, 0.4);
+}
+
+@media (max-width: 768px) {
+  .resourcesContent {
+    grid-template-columns: 1fr;
+  }
+
+  .resourcesText h2 {
+    font-size: 2.2rem;
+  }
+
+  .emailForm {
+    flex-direction: column;
+  }
+}
