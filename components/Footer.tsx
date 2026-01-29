@@ -20,7 +20,7 @@ export default function Footer() {
         </div>
         <div className={styles.footerSection}>
           <h4 className="serif">Contact</h4>
-          <a href="mailto:contact@promotedsoccerconsultants.com">Email Us</a>
+          <a href="mailto:bryan.fossi@promotedsoccerconsultants.com">Email Us</a>
           <a href="#contact">Schedule Consultation</a>
         </div>
       </div>
