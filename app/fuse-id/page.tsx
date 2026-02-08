@@ -70,14 +70,14 @@ export default function FuseId() {
               <p className={styles.packageDescription}>Essential education and guidance to get started</p>
               
               <ul className={styles.featureList}>
-  <li>Initial consultation call (60 min)</li>
-  <li>Player evaluation & realistic assessment</li>
-  <li>Division-level targeting guidance</li>
-  <li>Personalized college target list (40 schools)</li>
-  <li>NCAA recruiting rules education</li>
-  <li>Email template library</li>
-  <li>Recruiting timeline roadmap</li>
-</ul>
+                <li>Initial consultation call (60 min)</li>
+                <li>Player evaluation & realistic assessment</li>
+                <li>Division-level targeting guidance</li>
+                <li>Personalized college target list (40 schools)</li>
+                <li>NCAA recruiting rules education</li>
+                <li>Email template library</li>
+                <li>Recruiting timeline roadmap</li>
+              </ul>
               
               <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0gVHwbknurMB721Ay_SJUDbVAxz3Imw09ZV9u6Ix4VIg8ZMhfqoBk6JgcllPGcPLRmmPRw39rb" className={styles.packageButton} target="_blank" rel="noopener noreferrer">
                 Get Started with Basic
@@ -87,6 +87,9 @@ export default function FuseId() {
             {/* Premier Package */}
             <div className={`${styles.packageCard} ${styles.popular}`}>
               <div className={styles.popularBadge}>Most Popular</div>
+              <div className={styles.includedBadge}>
+                <span className={styles.includedIcon}>✓</span> Recruiting Website Included
+              </div>
               <h3 className="serif">Premier</h3>
               <div className={styles.price}>
                 <span className={styles.currency}>$</span>
@@ -95,14 +98,15 @@ export default function FuseId() {
               <p className={styles.packageDescription}>Comprehensive support throughout the recruiting process</p>
               
               <ul className={styles.featureList}>
-  <li>Everything in Basic, plus:</li>
-  <li>Monthly strategy calls (9 months)</li>
-  <li>Email and communication review</li>
-  <li>Video profile guidance</li>
-  <li>Academic eligibility planning</li>
-  <li>Official visit preparation</li>
-  <li>Offer evaluation support</li>
-</ul>
+                <li>Everything in Basic, plus:</li>
+                <li>Monthly strategy calls (9 months)</li>
+                <li>Email and communication review</li>
+                <li>Video profile guidance</li>
+                <li>Academic eligibility planning</li>
+                <li>Official visit preparation</li>
+                <li>Offer evaluation support</li>
+                <li className={styles.highlightFeature}><strong>Player Recruiting Website ($199 value)</strong></li>
+              </ul>
               
               <a href="https://buy.stripe.com/00w5kCgWZ4BR5Ao61b0oM01?locale=en&__embed_source=buy_btn_1SmHpkCEhePNOFCev3wHWtbb" className={`${styles.packageButton} ${styles.popularButton}`} target="_blank" rel="noopener noreferrer">
                 Get Started with Premier
@@ -111,6 +115,9 @@ export default function FuseId() {
 
             {/* Elite Package */}
             <div className={styles.packageCard}>
+              <div className={styles.includedBadge}>
+                <span className={styles.includedIcon}>✓</span> Recruiting Website Included
+              </div>
               <h3 className="serif">Elite</h3>
               <div className={styles.price}>
                 <span className={styles.currency}>$</span>
@@ -127,10 +134,55 @@ export default function FuseId() {
                 <li>Financial aid strategy</li>
                 <li>Transfer portal guidance (if needed)</li>
                 <li>Family advocacy and support</li>
+                <li className={styles.highlightFeature}><strong>Player Recruiting Website ($199 value)</strong></li>
               </ul>
               
               <a href="https://buy.stripe.com/6oUdR8gWZ0lBaUI2OZ0oM02?locale=en&__embed_source=buy_btn_1SmHtNCEhePNOFCenc9FsRRa" className={styles.packageButton} target="_blank" rel="noopener noreferrer">
                 Get Started with Elite
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Player Recruiting Website */}
+      <section className={styles.recruitingWebsite}>
+        <div className={styles.container}>
+          <div className={styles.websiteContent}>
+            <div className={styles.websiteText}>
+              <h2 className="serif">Professional Player Recruiting Website</h2>
+              <p>Give coaches one easy link with everything they need to evaluate your player. A professional recruiting website makes you easier to find, follow, and remember.</p>
+              <p>Custom subdomain (playername.promotedsoccerconsultants.com), embedded highlight videos, stats, academic info, game schedule, and direct coach contact form.</p>
+              
+              <div className={styles.websitePrice}>
+                <div className={styles.priceTag}>$199</div>
+                <p className={styles.priceDetail}>one-time payment · setup in 5 business days</p>
+                <p className={styles.priceIncluded}>Included FREE with Premier & Elite packages</p>
+              </div>
+              
+              <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1WqijoQUGp3BUMj6hE99CV6GOUGzFliVszCSbgCgX-B_VOfjNvAOWK6m_els0Y4Ge5LUniN65R" className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
+                Get Started
+              </a>
+            </div>
+            
+            <div>
+              <h3 className="serif">Why It Works:</h3>
+              <ul className={styles.websiteList}>
+                <li>Coaches bookmark it—not buried in email</li>
+                <li>Always current—update stats anytime</li>
+                <li>Mobile-friendly—review on any device</li>
+                <li>Professional impression—shows organization</li>
+                <li>Tool, not a guarantee—makes evaluation easier</li>
+                <li>You own all content—1 year hosting included</li>
+              </ul>
+              
+              <a 
+                href="https://playername.promotedsoccerconsultants.com" 
+                className={styles.viewExample}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                View Live Example →
               </a>
             </div>
           </div>
