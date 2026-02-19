@@ -50,7 +50,7 @@ export default function Navbar() {
       <li><a href="/fuse-id">FUSE-ID Recruiting Services</a></li>
     </ul>
   </li>
-  <li><a href="/chat">AI Assistant</a></li> {/* NEW LINE */}
+  <li><a href="https://www.ai.promotedsoccerconsultants.com" target="_blank" rel="noopener noreferrer">AI Assistant</a></li>
   <li><a href="/#why-us">Why Us</a></li>
   <li><a href="/#resources">Resources</a></li>
   <li><a href="/#about">About</a></li>
