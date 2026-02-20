@@ -23,7 +23,7 @@ export default function AIAssistantPage() {
               recruiting questions — trained on full NCAA rules and PSC&apos;s proven methodology.
               No waiting. No Googling. Just clear answers.
             </p>
-            <a href="/fuse-id" className={styles.ctaButton}>
+            <a href="https://ai.promotedsoccerconsultants.com" className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
               Unlock the PSC AI Assistant
             </a>
             <p className={styles.heroSubtext}>Exclusively available to PSC subscribers</p>
