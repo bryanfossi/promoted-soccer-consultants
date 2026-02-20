@@ -16,6 +16,7 @@ export default function Footer() {
           <h4 className="serif">Services</h4>
           <a href="#services">Club Consulting</a>
           <a href="#services">FUSE-ID Recruiting</a>
+          <a href="/ai-assistant">AI Assistant</a>
           <a href="#resources">Free Resources</a>
         </div>
         <div className={styles.footerSection}>
