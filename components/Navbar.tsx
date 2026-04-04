@@ -51,6 +51,8 @@ export default function Navbar() {
     </ul>
   </li>
   <li><a href="/ai-assistant">AI Assistant</a></li>
+  <li><a href="/free-resources">Free Resources</a></li>
+  <li><a href="/blog">Blog</a></li>
   <li><a href="/#why-us">Why Us</a></li>
   <li><a href="/#resources">Resources</a></li>
   <li><a href="/#about">About</a></li>
