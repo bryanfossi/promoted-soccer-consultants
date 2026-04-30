@@ -10,10 +10,10 @@ export default function About() {
   ]
 
   return (
-    <section className={styles.about} id="about">
+    <section className={styles.about} id="about" aria-labelledby="about-heading">
       <div className={styles.sectionContainer}>
         <div className={styles.aboutContent}>
-          <h2 className="serif">About Us</h2>
+          <h2 id="about-heading" className="serif">About Us</h2>
           <p>Promoted Soccer Consultants was founded by a coach who has experienced the recruiting process from every angle—as a recruited player, a college coach evaluating prospects, and a high school coach supporting families through the process.</p>
           <p>This perspective allows us to bridge the gap between clubs, families, and the college game with honesty and insight.</p>
           

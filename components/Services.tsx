@@ -30,10 +30,10 @@ export default function Services() {
   ]
 
   return (
-    <section className={styles.services} id="services">
+    <section className={styles.services} id="services" aria-labelledby="services-heading">
       <div className={styles.sectionContainer}>
         <div className={styles.sectionHeader}>
-          <h2 className="serif">Our Services</h2>
+          <h2 id="services-heading" className="serif">Our Services</h2>
           <p>Comprehensive support for clubs seeking organizational excellence and families navigating the college recruiting journey</p>
         </div>
         <div className={styles.servicesGrid}>

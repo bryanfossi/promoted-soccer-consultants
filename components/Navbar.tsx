@@ -35,7 +35,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
+    <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`} aria-label="Primary">
       <div className={styles.navContainer}>
         <a href="/" className={styles.logo} onClick={closeMenu}>
           <img

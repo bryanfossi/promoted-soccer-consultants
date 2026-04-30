@@ -1,3 +1,4 @@
+/* Resources section — dark navy */
 .resources {
   padding: 6rem 2rem;
   background: var(--dark-navy);
@@ -14,7 +15,6 @@
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  margin-bottom: 4rem;
 }
 
 .resourcesText h2 {
@@ -22,30 +22,39 @@
   font-weight: 400;
   margin-bottom: 1.5rem;
   letter-spacing: -0.5px;
-}
-
-.resourcesText h3 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: var(--accent-gold);
+  color: white;
 }
 
 .resourcesText p {
   font-size: 1.1rem;
   line-height: 1.8;
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 1rem;
+}
+
+/* Topics — demoted to subordinate label, not competing H3 */
+.topicsBlock {
+  /* sits beside resourcesText on desktop */
+}
+
+.topicsLabel {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
   margin-bottom: 1rem;
 }
 
 .resourcesList {
   list-style: none;
-  margin-top: 2rem;
 }
 
 .resourcesList li {
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.95);
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -57,24 +66,34 @@
   font-weight: bold;
 }
 
-/* Newsletter Section */
-.newsletterSection {
+/* Newsletter — its own section, distinct gradient */
+.newsletter {
+  padding: 5rem 2rem;
+  background:
+    linear-gradient(135deg, #14202c 0%, #1a2332 100%);
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.newsletterInner {
+  max-width: 640px;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 3rem;
-  padding-top: 3rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.newsletterSection h3 {
-  font-size: 2rem;
-  color: var(--accent-gold);
+.newsletterInner h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: white;
   margin-bottom: 1rem;
+  letter-spacing: -0.5px;
 }
 
-.newsletterSection p {
+.newsletterInner > p {
   font-size: 1.1rem;
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.88);
   margin-bottom: 2rem;
+  line-height: 1.7;
 }
 
 .emailForm {
@@ -93,12 +112,18 @@
   font-size: 1rem;
   background: rgba(255, 255, 255, 0.95);
   color: var(--text-dark);
+  font-family: inherit;
 }
 
 .emailInput:focus {
   outline: none;
   border-color: var(--accent-gold);
   background: white;
+}
+
+.emailInput:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .subscribeButton {
@@ -111,6 +136,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: inherit;
 }
 
 .subscribeButton:hover:not(:disabled) {
@@ -124,11 +150,6 @@
   cursor: not-allowed;
 }
 
-.emailInput:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
 .statusMessage {
   max-width: 500px;
   margin: 1rem auto 0;
@@ -137,7 +158,7 @@
   line-height: 1.5;
   text-align: center;
   padding: 0 1rem;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.92);
 }
 
 .statusSuccess {
@@ -153,10 +174,15 @@
 @media (max-width: 768px) {
   .resourcesContent {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 
   .resourcesText h2 {
     font-size: 2.2rem;
+  }
+
+  .newsletterInner h2 {
+    font-size: 1.9rem;
   }
 
   .emailForm {

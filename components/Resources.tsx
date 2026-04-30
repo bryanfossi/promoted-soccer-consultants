@@ -84,69 +84,88 @@ export default function Resources() {
   }
 
   return (
-    <section className={styles.resources} id="resources">
-      <div className={styles.sectionContainer}>
-        <div className={styles.resourcesContent}>
-          <div className={styles.resourcesText}>
-            <h2 className="serif">Free Recruiting Education &amp; Resources</h2>
-            <p>
-              We regularly host free webinars and publish educational resources for players,
-              parents, and coaches to better understand the college recruiting process.
-            </p>
-            <p>
-              Our commitment to education extends beyond our paid services. We believe informed
-              families make better decisions.
-            </p>
-          </div>
-          <div>
-            <h3 className="serif">Topics We Cover:</h3>
-            <ul className={styles.resourcesList}>
-              {topics.map((topic, index) => (
-                <li key={index}>{topic}</li>
-              ))}
-            </ul>
+    <>
+      <section className={styles.resources} id="resources" aria-labelledby="resources-heading">
+        <div className={styles.sectionContainer}>
+          <div className={styles.resourcesContent}>
+            <div className={styles.resourcesText}>
+              <h2 id="resources-heading" className="serif">
+                Free Recruiting Education &amp; Resources
+              </h2>
+              <p>
+                We regularly host free webinars and publish educational resources for players,
+                parents, and coaches to better understand the college recruiting process.
+              </p>
+              <p>
+                Our commitment to education extends beyond our paid services. We believe informed
+                families make better decisions.
+              </p>
+            </div>
+            <div className={styles.topicsBlock}>
+              <p className={styles.topicsLabel}>Topics We Cover</p>
+              <ul className={styles.resourcesList}>
+                {topics.map((topic, index) => (
+                  <li key={index}>{topic}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
+      </section>
 
-        {/* Newsletter Signup */}
-        <div className={styles.newsletterSection}>
-          <h3 className="serif">Stay Informed</h3>
-          <p>Subscribe to receive recruiting newsletters, webinar invites, and exclusive tips.</p>
+      <section
+        className={styles.newsletter}
+        id="newsletter"
+        aria-labelledby="newsletter-heading"
+      >
+        <div className={styles.sectionContainer}>
+          <div className={styles.newsletterInner}>
+            <h2 id="newsletter-heading" className="serif">
+              Stay Informed
+            </h2>
+            <p>
+              Subscribe to receive recruiting newsletters, webinar invites, and exclusive tips.
+            </p>
 
-          <form onSubmit={handleSubmit} className={styles.emailForm} noValidate>
-            <input
-              type="email"
-              name="EMAIL"
-              className={styles.emailInput}
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              disabled={status === 'loading' || status === 'success'}
-              aria-label="Email address"
-              aria-describedby="newsletter-status"
-            />
-            <button
-              type="submit"
-              className={styles.subscribeButton}
-              disabled={status === 'loading' || status === 'success'}
+            <form onSubmit={handleSubmit} className={styles.emailForm} noValidate>
+              <input
+                type="email"
+                name="EMAIL"
+                className={styles.emailInput}
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                disabled={status === 'loading' || status === 'success'}
+                aria-label="Email address"
+                aria-describedby="newsletter-status"
+              />
+              <button
+                type="submit"
+                className={styles.subscribeButton}
+                disabled={status === 'loading' || status === 'success'}
+              >
+                {status === 'loading'
+                  ? 'Subscribing…'
+                  : status === 'success'
+                  ? 'Subscribed'
+                  : 'Subscribe'}
+              </button>
+            </form>
+
+            <div
+              id="newsletter-status"
+              role="status"
+              aria-live="polite"
+              className={`${styles.statusMessage} ${
+                status === 'success' ? styles.statusSuccess : ''
+              } ${status === 'error' ? styles.statusError : ''}`}
             >
-              {status === 'loading' ? 'Subscribing…' : status === 'success' ? 'Subscribed' : 'Subscribe'}
-            </button>
-          </form>
-
-          <div
-            id="newsletter-status"
-            role="status"
-            aria-live="polite"
-            className={`${styles.statusMessage} ${
-              status === 'success' ? styles.statusSuccess : ''
-            } ${status === 'error' ? styles.statusError : ''}`}
-          >
-            {message}
+              {message}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
