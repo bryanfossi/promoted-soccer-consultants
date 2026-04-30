@@ -186,7 +186,11 @@ export default function D1ScholarshipsArticle() {
             Families who assume &ldquo;D1 scholarship&rdquo; means their cost is covered often hit
             a financial wall during the process — sometimes after a player has already committed.
             The offer sounds good. The actual net price, once you run it through a financial aid
-            calculator, can be worse than a D3 school with strong academic merit aid.
+            calculator, can be worse than a D3 school with strong academic merit aid — or a{' '}
+            <a href="/blog/preferred-walk-on-college-soccer" className={styles.inlineLink}>
+              preferred walk-on offer
+            </a>{' '}
+            at a school where academic aid covers the rest.
           </p>
 
           <p>

@@ -18,10 +18,17 @@ export const metadata = {
 
 const posts = [
   {
+    slug: 'preferred-walk-on-college-soccer',
+    title: 'What Is a Preferred Walk-On in College Soccer?',
+    description:
+      "A PWO is a recruited roster spot without athletic aid — and it's still a real recruiting outcome. Here's how to evaluate one, and when to take it.",
+    tag: 'Offers & Scholarships',
+  },
+  {
     slug: 'how-many-d1-soccer-scholarships',
     title: 'How Many D1 Soccer Scholarships Are There — And What Does That Mean for Your Player?',
     description:
-      'D1 men\'s programs get 9.9 scholarships split across rosters of 25–30. Most athletes receive partial aid, not full rides. Here\'s what families need to understand before building a recruiting strategy around D1.',
+      "D1 men's programs get 9.9 scholarships split across rosters of 25–30. Most athletes receive partial aid, not full rides. Here's what families need to understand before building a recruiting strategy around D1.",
     tag: 'NCAA Rules & Scholarships',
   },
 ]
@@ -46,7 +53,7 @@ const blogSchema = {
     headline: post.title,
     description: post.description,
     url: `https://www.promotedsoccerconsultants.com/blog/${post.slug}`,
-    author: { '@type': 'Person', name: 'Bryan Fossi' },
+    author: { '@id': 'https://www.promotedsoccerconsultants.com#bryan-fossi' },
   })),
 }
 
