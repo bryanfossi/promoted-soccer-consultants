@@ -115,6 +115,29 @@
   font-size: 1.1rem;
 }
 
+.learnMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 1.5rem;
+  color: var(--primary-green);
+  font-weight: 600;
+  font-size: 0.98rem;
+  letter-spacing: 0.2px;
+}
+
+.learnMoreBtn::after {
+  content: '→';
+  transition: transform 0.25s ease;
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.serviceCardLink:hover .learnMoreBtn::after,
+.serviceCard:hover .learnMoreBtn::after {
+  transform: translateX(4px);
+}
+
 @media (max-width: 768px) {
   .servicesGrid {
     grid-template-columns: 1fr;

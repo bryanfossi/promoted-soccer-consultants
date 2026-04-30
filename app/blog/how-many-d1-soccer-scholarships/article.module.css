@@ -9,14 +9,28 @@
 
 /* Breadcrumb */
 .breadcrumb {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: var(--text-light);
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* compensates for inner padding so it visually aligns left */
+  margin-left: -0.5rem;
 }
 
-.breadcrumb a {
+.breadcrumb a,
+.breadcrumb > span:not([aria-hidden]) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 0.5rem;
   color: var(--primary-green);
   text-decoration: none;
+}
+
+.breadcrumb > span:not([aria-hidden]) {
+  color: var(--text-light);
 }
 
 .breadcrumb a:hover {
@@ -227,6 +241,8 @@
 
   .lead {
     font-size: 1.05rem;
+    font-style: normal;
+    padding-left: 1rem;
   }
 
   .ctaBlock {

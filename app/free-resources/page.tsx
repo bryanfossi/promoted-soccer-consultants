@@ -39,9 +39,11 @@ export default function FreeResourcesPage() {
 
           <div className={styles.videoWrapper}>
             <iframe
-              src="https://www.youtube.com/embed/j_XsDcmPAZ0"
+              src="https://www.youtube-nocookie.com/embed/j_XsDcmPAZ0"
               title="Promoted Soccer Consultants Webinar"
-              frameBorder="0"
+              width="860"
+              height="484"
+              loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
             />

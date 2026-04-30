@@ -5,6 +5,18 @@
 }
 
 :root {
+  /*
+    Brand color rules:
+    - --primary-green / --secondary-green: PRIMARY brand. Use on light sections.
+      Headings, CTAs, links, badges, success accents.
+    - --accent-gold: SECONDARY accent. Reserved for dark sections only
+      (Resources, Footer). Use as: section heading color, list bullet/arrow,
+      hover state on inverted links, focus indicators sitewide. Do NOT use
+      on white/light-gray sections — keeps gold meaningful as a "premium"
+      cue rather than diffused everywhere.
+    - --dark-navy: dark section background only.
+    - Focus indicator: --accent-gold on every surface (set in :focus-visible).
+  */
   --primary-green: #0d5c3d;
   --secondary-green: #1a7a50;
   --accent-gold: #d4a574;
