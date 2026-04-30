@@ -66,6 +66,9 @@ export const metadata: Metadata = {
       'max-video-preview': -1,
     },
   },
+  verification: {
+    google: 'hiFISgXYOd3LMx8k5filg-Qx9RSHmUe9RjwltDcLrZU',
+  },
 }
 
 const personSchema = {
