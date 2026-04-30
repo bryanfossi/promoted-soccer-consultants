@@ -27,9 +27,37 @@ const posts = [
   },
 ]
 
+const blogSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: 'Recruiting Education',
+  description:
+    'Free articles and guides on college soccer recruiting from Promoted Soccer Consultants.',
+  url: 'https://www.promotedsoccerconsultants.com/blog',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Promoted Soccer Consultants',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.promotedsoccerconsultants.com/promoted-soccer-consultants.png',
+    },
+  },
+  blogPost: posts.map((post) => ({
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    url: `https://www.promotedsoccerconsultants.com/blog/${post.slug}`,
+    author: { '@type': 'Person', name: 'Bryan Fossi' },
+  })),
+}
+
 export default function BlogIndex() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
+      />
       <Navbar />
 
       <section className={styles.hero}>

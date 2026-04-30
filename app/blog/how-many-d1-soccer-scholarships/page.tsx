@@ -19,9 +19,71 @@ export const metadata = {
   },
 }
 
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'How Many D1 Soccer Scholarships Are There — And What Does That Mean for Your Player?',
+  description:
+    'D1 men\'s soccer programs get 9.9 scholarships split across rosters of 25–30 players. Most athletes receive partial aid, not full rides. Here\'s what that means for your recruiting strategy.',
+  author: {
+    '@type': 'Person',
+    name: 'Bryan Fossi',
+    url: 'https://www.promotedsoccerconsultants.com',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Promoted Soccer Consultants',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.promotedsoccerconsultants.com/promoted-soccer-consultants.png',
+    },
+  },
+  datePublished: '2026-04-30',
+  dateModified: '2026-04-30',
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://www.promotedsoccerconsultants.com/blog/how-many-d1-soccer-scholarships',
+  },
+  articleSection: 'NCAA Rules & Scholarships',
+  inLanguage: 'en-US',
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Home',
+      item: 'https://www.promotedsoccerconsultants.com',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Blog',
+      item: 'https://www.promotedsoccerconsultants.com/blog',
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'D1 Soccer Scholarships',
+      item: 'https://www.promotedsoccerconsultants.com/blog/how-many-d1-soccer-scholarships',
+    },
+  ],
+}
+
 export default function D1ScholarshipsArticle() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Navbar />
 
       <div className={styles.pageWrap}>
