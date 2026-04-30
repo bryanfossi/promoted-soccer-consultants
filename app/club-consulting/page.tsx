@@ -17,9 +17,55 @@ export const metadata = {
   },
 }
 
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://www.promotedsoccerconsultants.com/club-consulting#service',
+  name: 'Club Consulting Services',
+  url: 'https://www.promotedsoccerconsultants.com/club-consulting',
+  description:
+    'Strategic consulting for soccer clubs and organizations: club audits, coach education, player pathway alignment, parent communication, and IT solutions.',
+  provider: { '@id': 'https://www.promotedsoccerconsultants.com#organization' },
+  areaServed: { '@type': 'Country', name: 'United States' },
+  serviceType: 'Soccer Club Strategic Consulting',
+  audience: {
+    '@type': 'Audience',
+    audienceType: 'Competitive youth clubs, recreational programs, high school programs',
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Club Consulting Offerings',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Strategic Planning & Club Audits' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Coach Education & Support' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Player Pathway Alignment' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Parent Communication Frameworks' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'IT Solutions & Automation' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Club Recruiting Services' } },
+    ],
+  },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.promotedsoccerconsultants.com' },
+    { '@type': 'ListItem', position: 2, name: 'Club Consulting', item: 'https://www.promotedsoccerconsultants.com/club-consulting' },
+  ],
+}
+
 export default function ClubConsulting() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Navbar />
       
       {/* Hero Section */}

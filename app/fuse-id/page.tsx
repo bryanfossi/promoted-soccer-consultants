@@ -17,9 +17,44 @@ export const metadata = {
   },
 }
 
+const serviceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  '@id': 'https://www.promotedsoccerconsultants.com/fuse-id#service',
+  name: 'FUSE-ID Recruiting Services',
+  alternateName: 'FUSE-ID',
+  url: 'https://www.promotedsoccerconsultants.com/fuse-id',
+  description:
+    "PSC's college soccer recruiting program — division-by-division timelines, NCAA rules, coach communication, and decision support for families.",
+  provider: { '@id': 'https://www.promotedsoccerconsultants.com#organization' },
+  areaServed: { '@type': 'Country', name: 'United States' },
+  serviceType: 'College Soccer Recruiting Education',
+  audience: {
+    '@type': 'Audience',
+    audienceType: 'Players and families navigating the college recruiting process',
+  },
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.promotedsoccerconsultants.com' },
+    { '@type': 'ListItem', position: 2, name: 'FUSE-ID Recruiting', item: 'https://www.promotedsoccerconsultants.com/fuse-id' },
+  ],
+}
+
 export default function FuseId() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Navbar />
       
       {/* Hero Section */}
