@@ -25,9 +25,7 @@ const articleSchema = {
   description:
     'D1 men\'s soccer programs get 9.9 scholarships split across rosters of 25–30 players. Most athletes receive partial aid, not full rides. Here\'s what that means for your recruiting strategy.',
   author: {
-    '@type': 'Person',
-    name: 'Bryan Fossi',
-    url: 'https://www.promotedsoccerconsultants.com',
+    '@id': 'https://www.promotedsoccerconsultants.com#bryan-fossi',
   },
   publisher: {
     '@type': 'Organization',

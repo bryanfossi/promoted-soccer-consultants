@@ -68,6 +68,27 @@ export const metadata: Metadata = {
   },
 }
 
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${SITE_URL}#bryan-fossi`,
+  name: 'Bryan Fossi',
+  jobTitle: 'College Soccer Recruiting Consultant',
+  worksFor: { '@id': `${SITE_URL}#organization` },
+  description:
+    'Former college soccer player and college coach who has evaluated and recruited prospects firsthand. Currently a high school head coach supporting families through the recruiting process. Recognized with multiple District Championships and Coach of the Year honors.',
+  knowsAbout: [
+    'NCAA recruiting rules',
+    'NAIA recruiting rules',
+    'NJCAA recruiting rules',
+    'College soccer recruiting',
+    'Soccer club strategic planning',
+    'Coach development',
+  ],
+  email: 'bryan.fossi@promotedsoccerconsultants.com',
+  url: SITE_URL,
+}
+
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
@@ -80,11 +101,15 @@ const organizationSchema = {
     url: `${SITE_URL}/promoted-soccer-consultants.png`,
   },
   email: 'bryan.fossi@promotedsoccerconsultants.com',
-  founder: {
-    '@type': 'Person',
-    name: 'Bryan Fossi',
-    jobTitle: 'College Soccer Recruiting Consultant',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    contactType: 'customer service',
+    email: 'bryan.fossi@promotedsoccerconsultants.com',
+    availableLanguage: 'English',
+    areaServed: 'US',
   },
+  founder: { '@id': `${SITE_URL}#bryan-fossi` },
+  employee: { '@id': `${SITE_URL}#bryan-fossi` },
   sameAs: [
     'https://www.youtube.com/@PromotedSoccerConsultantsLLC',
     'https://www.google.com/maps/place/Promoted+Soccer+Consultants,+LLC/@40.1985345,-76.4195075,221143m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46d0654ee99b1d09:0xbd942051fa726ffa!8m2!3d40.1985345!4d-76.4195075!16s%2Fg%2F11nh_03jd_',
@@ -131,6 +156,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
