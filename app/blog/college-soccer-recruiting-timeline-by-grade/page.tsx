@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import RelatedArticles from '@/components/RelatedArticles'
 import styles from '../article.module.css'
 
 const TITLE = 'The College Soccer Recruiting Timeline, Grade by Grade'
@@ -220,6 +221,8 @@ export default function TimelineArticle() {
             </p>
           </div>
         </article>
+
+        <RelatedArticles currentSlug="college-soccer-recruiting-timeline-by-grade" />
 
         <div className={styles.backLink}>
           <a href="/blog">← Back to Recruiting Education</a>

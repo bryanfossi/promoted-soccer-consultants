@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import RelatedArticles from '@/components/RelatedArticles'
 import styles from '../article.module.css'
 
 const TITLE = 'How to Write the First Email to a College Soccer Coach'
@@ -192,6 +193,8 @@ export default function FirstEmailArticle() {
             </p>
           </div>
         </article>
+
+        <RelatedArticles currentSlug="first-email-to-college-soccer-coach" />
 
         <div className={styles.backLink}>
           <a href="/blog">← Back to Recruiting Education</a>

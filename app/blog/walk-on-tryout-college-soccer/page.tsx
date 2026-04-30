@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import RelatedArticles from '@/components/RelatedArticles'
 import styles from '../article.module.css'
 
 const TITLE = 'Preferred Walk-On vs. Tryout Walk-On in College Soccer'
@@ -221,6 +222,8 @@ export default function WalkOnTryoutArticle() {
             </p>
           </div>
         </article>
+
+        <RelatedArticles currentSlug="walk-on-tryout-college-soccer" />
 
         <div className={styles.backLink}>
           <a href="/blog">← Back to Recruiting Education</a>

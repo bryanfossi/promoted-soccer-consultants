@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import styles from './article.module.css'
+import RelatedArticles from '@/components/RelatedArticles'
+import styles from '../article.module.css'
 
 export const metadata = {
   title: 'What Is a Preferred Walk-On in College Soccer?',
@@ -263,6 +264,8 @@ export default function PreferredWalkOnArticle() {
             </p>
           </div>
         </article>
+
+        <RelatedArticles currentSlug="preferred-walk-on-college-soccer" />
 
         <div className={styles.backLink}>
           <a href="/blog">← Back to Recruiting Education</a>

@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import RelatedArticles from '@/components/RelatedArticles'
 import styles from '../article.module.css'
 
 const TITLE = 'What College Soccer Coaches Actually Look For When Recruiting'
@@ -198,6 +199,8 @@ export default function CoachCriteriaArticle() {
             </p>
           </div>
         </article>
+
+        <RelatedArticles currentSlug="college-soccer-coach-recruiting-criteria" />
 
         <div className={styles.backLink}>
           <a href="/blog">← Back to Recruiting Education</a>

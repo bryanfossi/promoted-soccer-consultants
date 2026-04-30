@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
-import styles from './article.module.css'
+import RelatedArticles from '@/components/RelatedArticles'
+import styles from '../article.module.css'
 
 export const metadata = {
   title: 'How Many D1 Soccer Scholarships Are There?',
@@ -253,7 +254,8 @@ export default function D1ScholarshipsArticle() {
 
         </article>
 
-        {/* Back to Blog */}
+        <RelatedArticles currentSlug="how-many-d1-soccer-scholarships" />
+
         <div className={styles.backLink}>
           <a href="/blog">← Back to Recruiting Education</a>
         </div>

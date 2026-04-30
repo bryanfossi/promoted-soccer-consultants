@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import RelatedArticles from '@/components/RelatedArticles'
 import styles from '../article.module.css'
 
 const TITLE = 'What a 9th Grader Should Actually Be Doing for College Soccer Recruiting'
@@ -164,6 +165,8 @@ export default function NinthGradeArticle() {
             </p>
           </div>
         </article>
+
+        <RelatedArticles currentSlug="9th-grade-soccer-recruiting-checklist" />
 
         <div className={styles.backLink}>
           <a href="/blog">← Back to Recruiting Education</a>

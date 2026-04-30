@@ -1,5 +1,6 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import RelatedArticles from '@/components/RelatedArticles'
 import styles from '../article.module.css'
 
 const TITLE = 'D2 vs. D3 College Soccer: How to Tell Where Your Player Fits'
@@ -228,6 +229,8 @@ export default function D2vsD3Article() {
             </p>
           </div>
         </article>
+
+        <RelatedArticles currentSlug="d2-vs-d3-college-soccer" />
 
         <div className={styles.backLink}>
           <a href="/blog">← Back to Recruiting Education</a>
