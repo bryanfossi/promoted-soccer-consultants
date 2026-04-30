@@ -43,6 +43,13 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
+.subtext {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  opacity: 0.75;
+  letter-spacing: 0.3px;
+}
+
 @media (max-width: 768px) {
   .ctaSection h2 {
     font-size: 2.2rem;

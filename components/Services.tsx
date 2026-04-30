@@ -16,6 +16,7 @@ export default function Services() {
         'Player pathway alignment',
         'Parent communication frameworks'
       ],
+      cta: 'See How We Help Clubs',
       link: '/club-consulting'
     },
     {
@@ -30,6 +31,7 @@ export default function Services() {
         'What college coaches evaluate',
         'Strategy, planning, and decision support'
       ],
+      cta: 'Explore FUSE-ID Recruiting',
       link: '/fuse-id'
     }
   ]
@@ -63,7 +65,7 @@ export default function Services() {
                   ))}
                 </ul>
                 <div className={styles.learnMoreBtn}>
-                  Learn More
+                  {service.cta}
                 </div>
               </div>
             </Link>

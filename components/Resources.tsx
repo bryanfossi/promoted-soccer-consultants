@@ -121,10 +121,11 @@ export default function Resources() {
         <div className={styles.sectionContainer}>
           <div className={styles.newsletterInner}>
             <h2 id="newsletter-heading" className="serif">
-              Stay Informed
+              Get One Honest Recruiting Insight Each Month
             </h2>
             <p>
-              Subscribe to receive recruiting newsletters, webinar invites, and exclusive tips.
+              No daily emails. No upsell pitches. Just one short note from Bryan when something
+              actually matters.
             </p>
 
             <form onSubmit={handleSubmit} className={styles.emailForm} noValidate>

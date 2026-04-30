@@ -7,8 +7,9 @@ export default function CTA() {
         <h2 id="cta-heading" className="serif">Ready to Get Started?</h2>
         <p>Whether you&apos;re a club administrator looking to strengthen your organization or a family beginning the recruiting journey, we&apos;re here to help.</p>
         <a href="https://calendar.app.google/96Z4Kgp9mLh35sMj9" className={`${styles.btn} ${styles.btnPrimary}`} target="_blank" rel="noopener noreferrer">
-  Schedule Consultation
-</a>
+          Schedule Consultation
+        </a>
+        <p className={styles.subtext}>30 minutes &middot; Free &middot; No pitch</p>
       </div>
     </section>
   )

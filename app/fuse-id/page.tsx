@@ -61,11 +61,12 @@ export default function FuseId() {
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
-            <h1 className="serif">FUSE-ID Recruiting Services</h1>
-            <p>Navigate the college soccer recruiting process with clarity, realistic guidance, and NCAA-compliant education.</p>
+            <h1 className="serif">College Soccer Recruiting Without the False Hope</h1>
+            <p>FUSE-ID is our recruiting education program for players and families: real evaluation, honest timelines, and division-by-division guidance from a former college coach.</p>
             <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1WqijoQUGp3BUMj6hE99CV6GOUGzFliVszCSbgCgX-B_VOfjNvAOWK6m_els0Y4Ge5LUniN65R" className={styles.ctaButtonSecondary} target="_blank" rel="noopener noreferrer">
               Schedule Free Consultation
             </a>
+            <p className={styles.subtext}>30 minutes &middot; Free &middot; No pitch</p>
           </div>
           <div className={styles.heroImage}>
             <Image

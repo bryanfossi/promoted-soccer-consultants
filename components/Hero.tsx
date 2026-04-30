@@ -33,6 +33,7 @@ return (
               Free Resources
             </a>
           </div>
+          <p className={styles.ctaSubtext}>30 minutes &middot; Free &middot; No pitch</p>
         </div>
         <div className={styles.heroImageContainer}>
           <Image

@@ -31,11 +31,14 @@ export default function FreeResourcesPage() {
             started. We&apos;re committed to giving every family access to honest, expert guidance —
             completely free.
           </p>
+          <a href="#latest-episode" className={styles.heroCta}>
+            Watch the Latest Webinar ↓
+          </a>
         </div>
       </section>
 
       {/* Latest Video */}
-      <section className={styles.latestVideo}>
+      <section id="latest-episode" className={styles.latestVideo}>
         <div className={styles.container}>
           <div className={styles.sectionHeader}>
             <span className={styles.sectionLabel}>Latest Episode</span>

@@ -72,11 +72,12 @@ export default function ClubConsulting() {
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
-            <h1 className="serif">Club Consulting Services</h1>
-            <p>Strengthen your soccer organization with strategic planning, coach development, and sustainable growth frameworks.</p>
+            <h1 className="serif">Stronger Soccer Clubs Start With Honest Strategic Guidance</h1>
+            <p>Strategic consulting for youth clubs, recreational programs, and high school programs ready to grow without compromising development.</p>
             <a href="https://calendar.app.google/96Z4Kgp9mLh35sMj9" className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
-  Schedule Free Consultation Call
-</a>
+              Schedule Free Consultation Call
+            </a>
+            <p className={styles.subtext}>30 minutes &middot; Free &middot; No pitch</p>
           </div>
           <div className={styles.heroImage}>
             <Image
@@ -222,7 +223,7 @@ export default function ClubConsulting() {
           <a href="https://calendar.app.google/96Z4Kgp9mLh35sMj9" className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
   Schedule Free Consultation Call
 </a>
-          <p className={styles.subtext}>30-minute call · No obligation · Completely free</p>
+          <p className={styles.subtext}>30 minutes &middot; Free &middot; No pitch</p>
         </div>
       </section>
 
