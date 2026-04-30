@@ -14,15 +14,19 @@ export default function Footer() {
 </div>
         <div className={styles.footerSection}>
           <h4 className="serif">Services</h4>
-          <a href="#services">Club Consulting</a>
-          <a href="#services">FUSE-ID Recruiting</a>
+          <a href="/club-consulting">Club Consulting</a>
+          <a href="/fuse-id">FUSE-ID Recruiting</a>
           <a href="/ai-assistant">AI Assistant</a>
-          <a href="#resources">Free Resources</a>
+        </div>
+        <div className={styles.footerSection}>
+          <h4 className="serif">Education</h4>
+          <a href="/free-resources">Free Resources</a>
+          <a href="/blog">Blog</a>
         </div>
         <div className={styles.footerSection}>
           <h4 className="serif">Contact</h4>
           <a href="mailto:bryan.fossi@promotedsoccerconsultants.com">Email Us</a>
-          <a href="#contact">Schedule Consultation</a>
+          <a href="https://calendar.app.google/96Z4Kgp9mLh35sMj9" target="_blank" rel="noopener noreferrer">Schedule Consultation</a>
         </div>
       </div>
       

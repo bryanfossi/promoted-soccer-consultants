@@ -20,10 +20,15 @@ return (
           <h1 className="serif">Clear Guidance for Soccer Clubs, Players, and Families</h1>
           <p>Helping soccer organizations grow stronger and helping families navigate the college recruiting process with clarity, honesty, and NCAA-compliant education.</p>
           <div className={styles.heroCtas}>
-            <a href="#contact" className={`${styles.btn} ${styles.btnPrimary}`}>
+            <a
+              href="https://calendar.app.google/96Z4Kgp9mLh35sMj9"
+              className={`${styles.btn} ${styles.btnPrimary}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Schedule Consultation
             </a>
-            <a href="#resources" className={`${styles.btn} ${styles.btnSecondary}`}>
+            <a href="/free-resources" className={`${styles.btn} ${styles.btnSecondary}`}>
               Free Resources
             </a>
           </div>
