@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import styles from './Navbar.module.css'
 
 export default function Navbar() {
@@ -38,9 +39,13 @@ export default function Navbar() {
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`} aria-label="Primary">
       <div className={styles.navContainer}>
         <a href="/" className={styles.logo} onClick={closeMenu}>
-          <img
+          <Image
             src="/promoted-soccer-consultants.png"
             alt="Promoted Soccer Consultants"
+            width={1024}
+            height={1536}
+            priority
+            sizes="(max-width: 900px) 56px, 75px"
             className={styles.logoImage}
           />
         </a>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import styles from './club-consulting.module.css'
@@ -32,9 +33,13 @@ export default function ClubConsulting() {
 </a>
           </div>
           <div className={styles.heroImage}>
-            <img 
-              src="/promoted-soccer-consultants.png" 
-              alt="Promoted Soccer Consultants"
+            <Image
+              src="/promoted-soccer-consultants.png"
+              alt=""
+              width={1024}
+              height={1536}
+              priority
+              sizes="(max-width: 768px) 220px, 300px"
             />
           </div>
         </div>

@@ -1,10 +1,13 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import styles from './Services.module.css'
 
 export default function Services() {
   const services = [
     {
       image: '/promoted-soccer-consultants.png',
+      imageWidth: 1024,
+      imageHeight: 1536,
       title: 'Club Consulting Services',
       description: 'We partner with soccer clubs and organizations to strengthen structure, improve communication, and support long-term player development.',
       features: [
@@ -17,6 +20,8 @@ export default function Services() {
     },
     {
       image: '/fuse-id-logo.png',
+      imageWidth: 1024,
+      imageHeight: 1024,
       title: 'FUSE-ID Recruiting Services',
       description: 'Our college recruiting education program designed to help players and parents understand the recruiting process, timelines, and realistic opportunities.',
       features: [
@@ -41,9 +46,12 @@ export default function Services() {
             <Link href={service.link} key={index} className={styles.serviceCardLink}>
               <div className={styles.serviceCard}>
                 <div className={styles.serviceIcon}>
-                  <img 
-                    src={service.image} 
-                    alt={service.title}
+                  <Image
+                    src={service.image}
+                    alt=""
+                    width={service.imageWidth}
+                    height={service.imageHeight}
+                    sizes="180px"
                     className={styles.serviceImage}
                   />
                 </div>

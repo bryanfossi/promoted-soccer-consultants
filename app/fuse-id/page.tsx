@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import styles from './fuse-id.module.css'
@@ -32,9 +33,13 @@ export default function FuseId() {
             </a>
           </div>
           <div className={styles.heroImage}>
-            <img 
-              src="/fuse-id-logo.png" 
-              alt="FUSE-ID Recruiting"
+            <Image
+              src="/fuse-id-logo.png"
+              alt=""
+              width={1024}
+              height={1024}
+              priority
+              sizes="(max-width: 768px) 220px, 300px"
             />
           </div>
         </div>

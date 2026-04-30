@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './Hero.module.css'
 
 export default function Hero() {
@@ -34,9 +35,13 @@ return (
           </div>
         </div>
         <div className={styles.heroImageContainer}>
-          <img 
-            src="/promoted-soccer-consultants.png" 
-            alt="Promoted Soccer Consultants" 
+          <Image
+            src="/promoted-soccer-consultants.png"
+            alt=""
+            width={1024}
+            height={1536}
+            priority
+            sizes="(max-width: 768px) 200px, 350px"
             className={styles.heroLogo}
           />
         </div>

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styles from './Footer.module.css'
 
 export default function Footer() {
@@ -5,9 +6,12 @@ export default function Footer() {
     <footer className={styles.footer} aria-label="Site footer">
       <div className={styles.footerContent}>
         <div className={styles.footerSection}>
-  <img 
-    src="/promoted-soccer-consultants.png" 
-    alt="Promoted Soccer Consultants" 
+  <Image
+    src="/promoted-soccer-consultants.png"
+    alt="Promoted Soccer Consultants"
+    width={1024}
+    height={1536}
+    sizes="80px"
     className={styles.footerLogo}
   />
   <p>Providing clarity and guidance in soccer club development and college recruiting.</p>
