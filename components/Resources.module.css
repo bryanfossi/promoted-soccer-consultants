@@ -113,10 +113,41 @@
   transition: all 0.3s ease;
 }
 
-.subscribeButton:hover {
+.subscribeButton:hover:not(:disabled) {
   background: #c89560;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(212, 165, 116, 0.4);
+}
+
+.subscribeButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.emailInput:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.statusMessage {
+  max-width: 500px;
+  margin: 1rem auto 0;
+  min-height: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.statusSuccess {
+  color: #6ee7b7;
+  font-weight: 500;
+}
+
+.statusError {
+  color: #fca5a5;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
