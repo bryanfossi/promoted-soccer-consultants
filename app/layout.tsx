@@ -85,7 +85,10 @@ const organizationSchema = {
     name: 'Bryan Fossi',
     jobTitle: 'College Soccer Recruiting Consultant',
   },
-  sameAs: ['https://www.youtube.com/@PromotedSoccerConsultantsLLC'],
+  sameAs: [
+    'https://www.youtube.com/@PromotedSoccerConsultantsLLC',
+    'https://www.google.com/maps/place/Promoted+Soccer+Consultants,+LLC/@40.1985345,-76.4195075,221143m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46d0654ee99b1d09:0xbd942051fa726ffa!8m2!3d40.1985345!4d-76.4195075!16s%2Fg%2F11nh_03jd_',
+  ],
 }
 
 const websiteSchema = {
@@ -112,6 +115,11 @@ const professionalServiceSchema = {
     'NCAA Recruiting Education',
   ],
   areaServed: { '@type': 'Country', name: 'United States' },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 40.1985345,
+    longitude: -76.4195075,
+  },
   provider: { '@id': `${SITE_URL}#organization` },
 }
 
