@@ -7,6 +7,13 @@ import About from '@/components/About'
 import CTA from '@/components/CTA'
 import Footer from '@/components/Footer'
 
+export const metadata = {
+  alternates: { canonical: '/' },
+  openGraph: {
+    url: 'https://www.promotedsoccerconsultants.com/',
+  },
+}
+
 export default function Home() {
   return (
     <main>

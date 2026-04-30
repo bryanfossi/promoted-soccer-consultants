@@ -3,8 +3,17 @@ import Footer from '@/components/Footer'
 import styles from './ai-assistant.module.css'
 
 export const metadata = {
-  title: 'PSC AI Assistant | Your 24/7 College Soccer Recruiting Expert',
-  description: 'Get instant, accurate answers to your college soccer recruiting questions. The PSC AI Assistant is trained on full NCAA rules and PSC expertise — exclusively for PSC clients.',
+  title: 'AI Recruiting Assistant',
+  description:
+    "Instant, accurate answers to college soccer recruiting questions. The PSC AI Assistant is trained on full NCAA rules and PSC's methodology.",
+  alternates: { canonical: '/ai-assistant' },
+  openGraph: {
+    title: 'AI Recruiting Assistant | Promoted Soccer Consultants',
+    description:
+      "Instant answers to college soccer recruiting questions, trained on NCAA rules and PSC's methodology.",
+    url: 'https://www.promotedsoccerconsultants.com/ai-assistant',
+    type: 'website',
+  },
 }
 
 export default function AIAssistantPage() {

@@ -3,19 +3,18 @@ import Footer from '@/components/Footer'
 import styles from './article.module.css'
 
 export const metadata = {
-  title: 'How Many D1 Soccer Scholarships Are There? | Promoted Soccer Consultants',
+  title: 'How Many D1 Soccer Scholarships Are There?',
   description:
-    'D1 men\'s soccer programs get 9.9 scholarships split across rosters of 25–30 players. Most athletes receive partial aid, not full rides. Here\'s what that means for your recruiting strategy.',
-  alternates: {
-    canonical: 'https://www.promotedsoccerconsultants.com/blog/how-many-d1-soccer-scholarships',
-  },
+    "D1 men's soccer programs get 9.9 scholarships split across 25–30 players. Most athletes get partial aid, not full rides — here's what that means.",
+  alternates: { canonical: '/blog/how-many-d1-soccer-scholarships' },
   openGraph: {
-    title: 'How Many D1 Soccer Scholarships Are There — And What Does That Mean for Your Player?',
+    title: 'How Many D1 Soccer Scholarships Are There?',
     description:
-      'D1 men\'s programs get 9.9 scholarships divided across 25–30 players. Most athletes receive partial aid. Here\'s what families need to understand before anchoring a recruiting strategy to D1.',
+      "9.9 scholarships split across 25–30 players. Most D1 athletes get partial aid, not full rides — here's what that means for families.",
     url: 'https://www.promotedsoccerconsultants.com/blog/how-many-d1-soccer-scholarships',
-    siteName: 'Promoted Soccer Consultants',
     type: 'article',
+    publishedTime: '2026-04-30',
+    authors: ['Bryan Fossi'],
   },
 }
 

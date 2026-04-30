@@ -3,8 +3,17 @@ import Footer from '@/components/Footer'
 import styles from './free-resources.module.css'
 
 export const metadata = {
-  title: 'Free Resources | Promoted Soccer Consultants',
-  description: 'Free college soccer recruiting resources from Promoted Soccer Consultants — webinars, videos, and expert guidance to help families navigate the recruiting process.',
+  title: 'Free Resources',
+  description:
+    'Free college soccer recruiting resources — webinars, videos, and expert guidance to help families navigate the recruiting process.',
+  alternates: { canonical: '/free-resources' },
+  openGraph: {
+    title: 'Free Resources | Promoted Soccer Consultants',
+    description:
+      'Free college soccer recruiting webinars, videos, and expert guidance for families.',
+    url: 'https://www.promotedsoccerconsultants.com/free-resources',
+    type: 'website',
+  },
 }
 
 export default function FreeResourcesPage() {

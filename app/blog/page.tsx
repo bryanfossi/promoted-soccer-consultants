@@ -3,16 +3,15 @@ import Footer from '@/components/Footer'
 import styles from './blog.module.css'
 
 export const metadata = {
-  title: 'Recruiting Education | Promoted Soccer Consultants',
-  description: 'Free articles and guides on college soccer recruiting — NCAA rules, scholarships, coach communication, and more from the consultants at Promoted Soccer Consultants.',
-  alternates: {
-    canonical: 'https://www.promotedsoccerconsultants.com/blog',
-  },
+  title: 'Recruiting Education',
+  description:
+    'Free articles and guides on college soccer recruiting — NCAA rules, scholarships, coach communication, and the questions families actually ask.',
+  alternates: { canonical: '/blog' },
   openGraph: {
     title: 'Recruiting Education | Promoted Soccer Consultants',
-    description: 'Free articles and guides on college soccer recruiting — NCAA rules, scholarships, coach communication, and more.',
+    description:
+      'Free articles on college soccer recruiting — NCAA rules, scholarships, coach communication, and more.',
     url: 'https://www.promotedsoccerconsultants.com/blog',
-    siteName: 'Promoted Soccer Consultants',
     type: 'website',
   },
 }

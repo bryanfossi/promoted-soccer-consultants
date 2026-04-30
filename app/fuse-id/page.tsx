@@ -2,6 +2,20 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import styles from './fuse-id.module.css'
 
+export const metadata = {
+  title: 'FUSE-ID Recruiting Services',
+  description:
+    "FUSE-ID is PSC's college soccer recruiting program — division-by-division timelines, NCAA rules, coach communication, and decision support for families.",
+  alternates: { canonical: '/fuse-id' },
+  openGraph: {
+    title: 'FUSE-ID Recruiting Services | Promoted Soccer Consultants',
+    description:
+      "PSC's college soccer recruiting program — timelines, NCAA rules, coach communication, and decision support for families.",
+    url: 'https://www.promotedsoccerconsultants.com/fuse-id',
+    type: 'website',
+  },
+}
+
 export default function FuseId() {
   return (
     <main>

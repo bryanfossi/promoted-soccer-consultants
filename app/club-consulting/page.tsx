@@ -2,6 +2,20 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import styles from './club-consulting.module.css'
 
+export const metadata = {
+  title: 'Club Consulting Services',
+  description:
+    "Strategic consulting for soccer clubs and organizations: club audits, coach education, player pathway alignment, parent communication, and IT solutions.",
+  alternates: { canonical: '/club-consulting' },
+  openGraph: {
+    title: 'Club Consulting Services | Promoted Soccer Consultants',
+    description:
+      'Strategic consulting for soccer clubs: audits, coach education, player pathways, parent communication, IT solutions.',
+    url: 'https://www.promotedsoccerconsultants.com/club-consulting',
+    type: 'website',
+  },
+}
+
 export default function ClubConsulting() {
   return (
     <main>
