@@ -16,9 +16,65 @@ export const metadata = {
   },
 }
 
+const faqItems = [
+  {
+    tag: 'Recruiting Criteria',
+    question: 'What do coaches look for in a player at the D2 level?',
+    answer:
+      "D2 coaches prioritize technical ability, soccer IQ, and an athletic profile that translates against fast competition. Most need players who can contribute as freshmen — depth recruiting is rare. Position-specific physical baselines matter more than they do at D3.",
+  },
+  {
+    tag: 'NCAA Rules',
+    question: 'When can a D1 coach first contact my player?',
+    answer:
+      "For D1 men's and women's soccer, coaches can begin direct communication on June 15 after the player's sophomore year. Before that date, communication must go through the player's high school or club coach. Calendar specifics shift — check the AI for the current window.",
+  },
+  {
+    tag: 'Communication Strategy',
+    question: "What should be in my player's first email to a coach?",
+    answer:
+      'Subject line with name, position, and graduation year. Body: brief intro, key athletic info (height, foot, position), academic info (GPA, test scores), club and high school program, link to highlight film, and an upcoming event schedule. Keep it under 150 words.',
+  },
+  {
+    tag: 'Offers & Scholarships',
+    question: "What's the difference between a preferred walk-on and a scholarship offer?",
+    answer:
+      'A preferred walk-on has a guaranteed roster spot with no athletic aid — recruited and expected, just unfunded. A scholarship offer comes with athletic dollars, partial or full. Both are real recruiting outcomes; PWO status can convert to scholarship later based on contribution.',
+  },
+  {
+    tag: 'Coach Insight',
+    question: 'How many players does a typical college coach recruit each year?',
+    answer:
+      'A D1 program typically signs 4–8 new players per recruiting class to maintain a 25–30 person roster. D2 and D3 ranges are similar. The total spots available nationally each year are far smaller than most families assume going in.',
+  },
+  {
+    tag: 'Timeline & Planning',
+    question: 'What should my player be doing in 9th grade to prepare for recruiting?',
+    answer:
+      'Focus on grades, athletic development, and finding the right club fit. Begin building a target school list (10–15 schools spanning divisions). Start a basic film library. Most outreach should wait — 9th grade is foundation-building, not active recruiting.',
+  },
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: item.answer,
+    },
+  })),
+}
+
 export default function AIAssistantPage() {
   return (
     <main>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Navbar />
 
       {/* Hero */}
@@ -26,7 +82,7 @@ export default function AIAssistantPage() {
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
             <div className={styles.heroBadge}>PSC Exclusive</div>
-            <h1 className="serif">Your Personal Recruiting Assistant. Available 24/7.</h1>
+            <h1 className="serif">Your College Soccer Recruiting Assistant. Available 24/7.</h1>
             <p>
               The PSC AI Assistant gives you instant, expert answers to your college soccer
               recruiting questions — trained on full NCAA rules and PSC&apos;s proven methodology.
@@ -125,44 +181,18 @@ export default function AIAssistantPage() {
       <section className={styles.examples}>
         <div className={styles.container}>
           <h2 className="serif">Ask It Anything</h2>
-          <p className={styles.subtitle}>Here are just a few of the questions families ask the PSC AI every day.</p>
+          <p className={styles.subtitle}>
+            A preview of the questions the PSC AI handles every day — with the kind of direct
+            answers families actually need.
+          </p>
           <div className={styles.examplesGrid}>
-            <div className={styles.exampleCard}>
-              <div className={styles.exampleQuestion}>
-                &ldquo;What do coaches look for in a player at the D2 level?&rdquo;
+            {faqItems.map((item) => (
+              <div className={styles.exampleCard} key={item.question}>
+                <div className={styles.exampleTag}>{item.tag}</div>
+                <h3 className={styles.exampleQuestion}>{item.question}</h3>
+                <p className={styles.exampleAnswer}>{item.answer}</p>
               </div>
-              <div className={styles.exampleTag}>Recruiting Criteria</div>
-            </div>
-            <div className={styles.exampleCard}>
-              <div className={styles.exampleQuestion}>
-                &ldquo;When can a D1 coach first contact my player?&rdquo;
-              </div>
-              <div className={styles.exampleTag}>NCAA Rules</div>
-            </div>
-            <div className={styles.exampleCard}>
-              <div className={styles.exampleQuestion}>
-                &ldquo;What should be in my player&apos;s first email to a coach?&rdquo;
-              </div>
-              <div className={styles.exampleTag}>Communication Strategy</div>
-            </div>
-            <div className={styles.exampleCard}>
-              <div className={styles.exampleQuestion}>
-                &ldquo;What&apos;s the difference between a preferred walk-on and a scholarship offer?&rdquo;
-              </div>
-              <div className={styles.exampleTag}>Offers & Scholarships</div>
-            </div>
-            <div className={styles.exampleCard}>
-              <div className={styles.exampleQuestion}>
-                &ldquo;How many players does a typical college coach recruit each year?&rdquo;
-              </div>
-              <div className={styles.exampleTag}>Coach Insight</div>
-            </div>
-            <div className={styles.exampleCard}>
-              <div className={styles.exampleQuestion}>
-                &ldquo;What should my player be doing in 9th grade to prepare for recruiting?&rdquo;
-              </div>
-              <div className={styles.exampleTag}>Timeline & Planning</div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

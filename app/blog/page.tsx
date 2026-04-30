@@ -62,7 +62,7 @@ export default function BlogIndex() {
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <div className={styles.heroBadge}>Recruiting Education</div>
-          <h1 className="serif">What Every Soccer Family Should Know</h1>
+          <h1 className="serif">College Soccer Recruiting Education for Families</h1>
           <p>
             Straight-talk articles on NCAA rules, scholarships, coach communication, and how to
             find the right fit — from consultants who&apos;ve been on both sides of the recruiting

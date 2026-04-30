@@ -17,7 +17,7 @@ return (
     <section className={styles.hero}>
       <div className={styles.heroContainer}>
         <div className={styles.heroContent}>
-          <h1 className="serif">Clear Guidance for Soccer Clubs, Players, and Families</h1>
+          <h1 className="serif">College Soccer Recruiting Guidance for Clubs, Players, and Families</h1>
           <p>Helping soccer organizations grow stronger and helping families navigate the college recruiting process with clarity, honesty, and NCAA-compliant education.</p>
           <div className={styles.heroCtas}>
             <a

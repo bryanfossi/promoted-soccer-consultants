@@ -215,7 +215,11 @@ export default function D1ScholarshipsArticle() {
             it&apos;s an easier conversation. &ldquo;He&apos;s a D1 player&rdquo; is a better
             recruiting pitch than &ldquo;he&apos;s a strong D2 fit.&rdquo; The problem is that
             families build four-year strategies around a target that was never realistic, and the
-            correction comes late.
+            correction comes late. An{' '}
+            <a href="/fuse-id" className={styles.inlineLink}>
+              honest evaluation of where your player actually fits
+            </a>{' '}
+            — done by someone who isn&apos;t paid by club fees — gets ahead of that correction.
           </p>
 
           <p>
