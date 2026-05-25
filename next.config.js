@@ -12,6 +12,16 @@ const nextConfig = {
         destination: 'https://www.promotedsoccerconsultants.com/:path*',
         permanent: true,
       },
+      {
+        source: '/ai-assistant',
+        destination: '/fuse-id',
+        permanent: true,
+      },
+      {
+        source: '/services',
+        destination: '/recruiting-services',
+        permanent: true,
+      },
     ]
   },
 }

@@ -66,7 +66,7 @@ export default function FirstEmailArticle() {
           <header className={styles.articleHeader}>
             <span className={styles.articleTag}>Communication Strategy</span>
             <h1 className="serif">{TITLE}</h1>
-            <p className={styles.byline}>Bryan Fossi &middot; Promoted Soccer Consultants</p>
+            <p className={styles.byline}>Bryan Fossi &middot; Promoted Sports Consultants</p>
           </header>
 
           <p className={styles.lead}>

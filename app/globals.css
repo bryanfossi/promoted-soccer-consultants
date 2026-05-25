@@ -6,20 +6,40 @@
 
 :root {
   /*
-    Brand color rules:
-    - --primary-green / --secondary-green: PRIMARY brand. Use on light sections.
-      Headings, CTAs, links, badges, success accents.
-    - --accent-gold: SECONDARY accent. Reserved for dark sections only
-      (Resources, Footer). Use as: section heading color, list bullet/arrow,
-      hover state on inverted links, focus indicators sitewide. Do NOT use
-      on white/light-gray sections — keeps gold meaningful as a "premium"
-      cue rather than diffused everywhere.
-    - --dark-navy: dark section background only.
+    PSC parent-brand palette — refreshed 2026-05-13 to align with the new PSC
+    logo (silver/platinum ascending bars on dark navy).
+
+    Token notes:
+    - --primary-green / --secondary-green: these are LEGACY token names from
+      the original soccer-recruiting consultancy era. Despite the names, the
+      VALUES are now navy. The names are kept to avoid a sweeping rename
+      across every component CSS file. Future cleanup can rename them
+      properly when convenient. They remain the PRIMARY brand color on light
+      sections (headings, CTAs, links).
+    - --accent-silver / --accent-silver-bright: parent-brand accent.
+      Replaces the role gold used to play on light surfaces. Use for
+      subtle borders, pill badges, hover states on PSC parent-brand pages.
+    - --accent-gold: SECONDARY accent. Now reserved for (a) "Most Popular"
+      pricing-tier callouts, (b) Clubstack-themed surfaces and CTAs (where
+      Clubstack owns the gold accent in the product family), (c) section
+      heading color on dark sections (Footer, Resources, notice blocks).
+      Do NOT use on white/light-gray sections — keeps gold meaningful.
+    - --dark-navy: dark section BACKGROUND only. Same value as primary now,
+      but semantically distinct — used as a fill, not as a foreground color.
     - Focus indicator: --accent-gold on every surface (set in :focus-visible).
+
+    Product children own their own accents:
+    - FUSE-ID (fuse-id.online): lime green (#22c55e-ish, owned by product)
+    - Clubstack (clubstack.online): gold (#d4a574, our --accent-gold)
+    PSC parent surfaces (this site, except the products' landing pages) use
+    navy + silver. Within /fuse-id and /clubstack pages on this site, the
+    product's accent color may overlay the navy base.
   */
-  --primary-green: #0d5c3d;
-  --secondary-green: #1a7a50;
+  --primary-green: #1a2332;
+  --secondary-green: #2c3e57;
   --accent-gold: #d4a574;
+  --accent-silver: #c8d1da;
+  --accent-silver-bright: #e5ecf2;
   --dark-navy: #1a2332;
   --light-gray: #f8f9fa;
   --medium-gray: #e5e7eb;

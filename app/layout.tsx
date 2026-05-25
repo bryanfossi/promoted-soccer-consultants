@@ -15,9 +15,10 @@ const workSans = Work_Sans({
 })
 
 const SITE_URL = 'https://www.promotedsoccerconsultants.com'
-const SITE_NAME = 'Promoted Soccer Consultants'
+const SITE_NAME = 'Promoted Sports Consultants'
+const SITE_LEGAL_NAME = 'Promoted Soccer Consultants, LLC'
 const DEFAULT_DESCRIPTION =
-  'College soccer recruiting and club development consulting from a former college coach. Honest, NCAA-compliant guidance for clubs, players, and families.'
+  'PSC is a multi-sport recruiting and club-operations company: FUSE-ID for AI-powered college recruiting, Clubstack for running a club, plus Recruiting Services and Club Consulting from a former college coach.'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -41,19 +42,19 @@ export const metadata: Metadata = {
     description: DEFAULT_DESCRIPTION,
     images: [
       {
-        url: '/promoted-soccer-consultants.png',
-        width: 800,
-        height: 800,
+        url: '/psc-logo-full.png',
+        width: 1600,
+        height: 533,
         alt: SITE_NAME,
       },
     ],
     locale: 'en_US',
   },
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: `${SITE_NAME} | College Recruiting & Club Development`,
     description: DEFAULT_DESCRIPTION,
-    images: ['/promoted-soccer-consultants.png'],
+    images: ['/psc-logo-full.png'],
   },
   robots: {
     index: true,
@@ -76,16 +77,16 @@ const personSchema = {
   '@type': 'Person',
   '@id': `${SITE_URL}#bryan-fossi`,
   name: 'Bryan Fossi',
-  jobTitle: 'College Soccer Recruiting Consultant',
+  jobTitle: 'Founder, PSC — Multi-Sport Recruiting & Club Operations',
   worksFor: { '@id': `${SITE_URL}#organization` },
   description:
-    'Former college soccer player and college coach who has evaluated and recruited prospects firsthand. Currently a high school head coach supporting families through the recruiting process. Recognized with multiple District Championships and Coach of the Year honors.',
+    'Founder of Promoted Sports Consultants. Former college soccer player and college coach who has evaluated and recruited prospects firsthand. Currently a high school head coach and MLS Next Academy coach supporting families through the recruiting process. Recognized with multiple District Championships and Coach of the Year honors.',
   knowsAbout: [
     'NCAA recruiting rules',
     'NAIA recruiting rules',
     'NJCAA recruiting rules',
-    'College soccer recruiting',
-    'Soccer club strategic planning',
+    'College athletic recruiting',
+    'Youth sports club operations',
     'Coach development',
   ],
   email: 'bryan.fossi@promotedsoccerconsultants.com',
@@ -97,11 +98,14 @@ const organizationSchema = {
   '@type': 'Organization',
   '@id': `${SITE_URL}#organization`,
   name: SITE_NAME,
-  legalName: 'Promoted Soccer Consultants, LLC',
+  legalName: SITE_LEGAL_NAME,
+  alternateName: ['PSC', 'Promoted Soccer Consultants'],
   url: SITE_URL,
   logo: {
     '@type': 'ImageObject',
-    url: `${SITE_URL}/promoted-soccer-consultants.png`,
+    url: `${SITE_URL}/psc-logo-full.png`,
+    width: 1600,
+    height: 533,
   },
   email: 'bryan.fossi@promotedsoccerconsultants.com',
   contactPoint: {
@@ -115,6 +119,8 @@ const organizationSchema = {
   employee: { '@id': `${SITE_URL}#bryan-fossi` },
   sameAs: [
     'https://www.youtube.com/@PromotedSoccerConsultantsLLC',
+    'https://fuse-id.online',
+    'https://clubstack.online',
     'https://www.google.com/maps/place/Promoted+Soccer+Consultants,+LLC/@40.1985345,-76.4195075,221143m/data=!3m2!1e3!4b1!4m6!3m5!1s0x46d0654ee99b1d09:0xbd942051fa726ffa!8m2!3d40.1985345!4d-76.4195075!16s%2Fg%2F11nh_03jd_',
   ],
 }
@@ -136,10 +142,10 @@ const professionalServiceSchema = {
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    'College soccer recruiting consulting and club development services for soccer clubs, players, and families.',
+    'Multi-sport college recruiting consulting and club development services for youth sports clubs, athletes, and families.',
   serviceType: [
-    'College Soccer Recruiting Consulting',
-    'Soccer Club Strategic Consulting',
+    'College Athletic Recruiting Consulting',
+    'Youth Sports Club Strategic Consulting',
     'NCAA Recruiting Education',
   ],
   areaServed: { '@type': 'Country', name: 'United States' },

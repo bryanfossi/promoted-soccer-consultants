@@ -48,7 +48,7 @@
 
 .heroImage img {
   width: 100%;
-  max-width: 300px;
+  max-width: 380px;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -108,7 +108,7 @@
 
 .serviceCard:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(13, 92, 61, 0.15);
+  box-shadow: 0 8px 30px rgba(26, 35, 50, 0.15);
 }
 
 .serviceCard h3 {
@@ -276,7 +276,7 @@
   }
 
   .heroImage img {
-    max-width: 200px;
+    max-width: 280px;
   }
 
   .services h2,

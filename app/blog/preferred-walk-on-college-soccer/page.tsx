@@ -89,7 +89,7 @@ export default function PreferredWalkOnArticle() {
           <header className={styles.articleHeader}>
             <span className={styles.articleTag}>Offers &amp; Scholarships</span>
             <h1 className="serif">What Is a Preferred Walk-On in College Soccer?</h1>
-            <p className={styles.byline}>Bryan Fossi &middot; Promoted Soccer Consultants</p>
+            <p className={styles.byline}>Bryan Fossi &middot; Promoted Sports Consultants</p>
           </header>
 
           <p className={styles.lead}>

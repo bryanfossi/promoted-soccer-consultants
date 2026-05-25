@@ -1,7 +1,7 @@
 /* Hero */
 .hero {
   margin-top: 80px;
-  background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 60%, #1f5c45 100%);
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
   color: white;
   padding: 5rem 2rem;
   text-align: center;
@@ -161,6 +161,13 @@
   margin-bottom: 2.25rem;
 }
 
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .ctaButton {
   display: inline-block;
   background: white;
@@ -177,6 +184,25 @@
 .ctaButton:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+.ctaButtonSecondary {
+  display: inline-block;
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.7);
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.ctaButtonSecondary:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: white;
+  transform: translateY(-3px);
 }
 
 /* Responsive */

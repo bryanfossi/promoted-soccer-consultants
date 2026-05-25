@@ -32,8 +32,9 @@
 }
 
 .logoImage {
-  height: 75px;
+  height: 40px;
   width: auto;
+  display: block;
   transition: transform 0.3s ease;
 }
 
@@ -83,7 +84,7 @@
 .navCta:hover {
   background: var(--secondary-green);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(13, 92, 61, 0.25);
+  box-shadow: 0 8px 20px rgba(26, 35, 50, 0.25);
 }
 
 .mobileCtaItem {
@@ -197,7 +198,8 @@
   }
 
   .logoImage {
-    height: 56px;
+    height: 34px;
+    width: auto;
   }
 
   .navLinks {

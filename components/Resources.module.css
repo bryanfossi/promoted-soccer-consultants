@@ -115,8 +115,13 @@
   font-family: inherit;
 }
 
-.emailInput:focus {
+.emailInput:focus:not(:focus-visible) {
   outline: none;
+  border-color: var(--accent-gold);
+  background: white;
+}
+
+.emailInput:focus-visible {
   border-color: var(--accent-gold);
   background: white;
 }

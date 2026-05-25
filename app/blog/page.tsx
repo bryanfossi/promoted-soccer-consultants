@@ -6,12 +6,12 @@ import styles from './blog.module.css'
 export const metadata = {
   title: 'Recruiting Education',
   description:
-    'Free articles and guides on college soccer recruiting — NCAA rules, scholarships, coach communication, and the questions families actually ask.',
+    'Free articles and guides on college recruiting — NCAA rules, scholarships, coach communication, and the questions families actually ask. Soccer-deep today, multi-sport as the library grows.',
   alternates: { canonical: '/blog' },
   openGraph: {
-    title: 'Recruiting Education | Promoted Soccer Consultants',
+    title: 'Recruiting Education | Promoted Sports Consultants',
     description:
-      'Free articles on college soccer recruiting — NCAA rules, scholarships, coach communication, and more.',
+      'Free articles on college recruiting — NCAA rules, scholarships, coach communication, and more.',
     url: 'https://www.promotedsoccerconsultants.com/blog',
     type: 'website',
   },
@@ -23,14 +23,14 @@ const blogSchema = {
   '@type': 'Blog',
   name: 'Recruiting Education',
   description:
-    'Free articles and guides on college soccer recruiting from Promoted Soccer Consultants.',
+    'Free articles and guides on college recruiting from Promoted Sports Consultants.',
   url: 'https://www.promotedsoccerconsultants.com/blog',
   publisher: {
     '@type': 'Organization',
-    name: 'Promoted Soccer Consultants',
+    name: 'Promoted Sports Consultants',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://www.promotedsoccerconsultants.com/promoted-soccer-consultants.png',
+      url: 'https://www.promotedsoccerconsultants.com/psc-logo-full.png',
     },
   },
   blogPost: posts.map((post) => ({
@@ -54,11 +54,12 @@ export default function BlogIndex() {
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <div className={styles.heroBadge}>Recruiting Education</div>
-          <h1 className="serif">College Soccer Recruiting Education for Families</h1>
+          <h1 className="serif">Recruiting education from a coach who lives it.</h1>
           <p>
             Straight-talk articles on NCAA rules, scholarships, coach communication, and how to
-            find the right fit — from consultants who&apos;ve been on both sides of the recruiting
-            table.
+            find the right fit — from a coach who&apos;s been on both sides of the recruiting
+            table. The current library is soccer-deep; multi-sport content expands as new sports
+            come online.
           </p>
         </div>
       </section>
@@ -84,17 +85,22 @@ export default function BlogIndex() {
         <div className={styles.container}>
           <h2 className="serif">Have a Question That Isn&apos;t Answered Here?</h2>
           <p>
-            Our free consultation is exactly that — free. Bring your player&apos;s specific
-            situation and we&apos;ll give you an honest assessment.
+            Try FUSE-ID free, or bring your athlete&apos;s specific situation to a free
+            consultation — your call.
           </p>
-          <a
-            href="https://calendar.app.google/96Z4Kgp9mLh35sMj9"
-            className={styles.ctaButton}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Book a Free Consultation
-          </a>
+          <div className={styles.ctaButtons}>
+            <a href="/fuse-id" className={styles.ctaButton}>
+              Explore FUSE-ID
+            </a>
+            <a
+              href="https://calendar.app.google/96Z4Kgp9mLh35sMj9"
+              className={styles.ctaButtonSecondary}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Schedule a Free Consultation
+            </a>
+          </div>
         </div>
       </section>
 

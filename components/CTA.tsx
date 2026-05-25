@@ -9,7 +9,12 @@ export default function CTA() {
         <a href="https://calendar.app.google/96Z4Kgp9mLh35sMj9" className={`${styles.btn} ${styles.btnPrimary}`} target="_blank" rel="noopener noreferrer">
           Schedule Consultation
         </a>
-        <p className={styles.subtext}>30 minutes &middot; Free &middot; No pitch</p>
+        <p className={styles.subtext}>
+          30 minutes &middot; Free &middot; No pitch &nbsp;·&nbsp; or start free with{' '}
+          <a href="https://fuse-id.online" target="_blank" rel="noopener noreferrer">
+            FUSE-ID → fuse-id.online
+          </a>
+        </p>
       </div>
     </section>
   )

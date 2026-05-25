@@ -7,6 +7,7 @@ import styles from './Navbar.module.css'
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [productsOpen, setProductsOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
 
   useEffect(() => {
@@ -23,6 +24,7 @@ export default function Navbar() {
       document.body.style.overflow = 'hidden'
     } else {
       document.body.style.overflow = ''
+      setProductsOpen(false)
       setServicesOpen(false)
     }
     return () => {
@@ -32,6 +34,7 @@ export default function Navbar() {
 
   const closeMenu = () => {
     setMobileMenuOpen(false)
+    setProductsOpen(false)
     setServicesOpen(false)
   }
 
@@ -40,34 +43,59 @@ export default function Navbar() {
       <div className={styles.navContainer}>
         <a href="/" className={styles.logo} onClick={closeMenu}>
           <Image
-            src="/promoted-soccer-consultants.png"
-            alt="Promoted Soccer Consultants"
-            width={1024}
-            height={1536}
+            src="/psc-logo-compact.png"
+            alt="Promoted Sports Consultants"
+            width={1200}
+            height={400}
             priority
-            sizes="(max-width: 900px) 56px, 75px"
+            sizes="(max-width: 900px) 108px, 132px"
             className={styles.logoImage}
           />
         </a>
 
         <ul className={`${styles.navLinks} ${mobileMenuOpen ? styles.mobileOpen : ''}`}>
+          <li className={`${styles.dropdown} ${productsOpen ? styles.dropdownOpen : ''}`}>
+            <button
+              type="button"
+              className={styles.dropdownToggle}
+              aria-expanded={productsOpen}
+              aria-haspopup="true"
+              onClick={() => {
+                setProductsOpen(!productsOpen)
+                setServicesOpen(false)
+              }}
+            >
+              Products
+              <span className={styles.dropdownArrow} aria-hidden="true">▾</span>
+            </button>
+            <ul className={styles.dropdownMenu}>
+              <li>
+                <a href="/fuse-id" onClick={closeMenu}>FUSE-ID</a>
+              </li>
+              <li>
+                <a href="/clubstack" onClick={closeMenu}>Clubstack</a>
+              </li>
+            </ul>
+          </li>
           <li className={`${styles.dropdown} ${servicesOpen ? styles.dropdownOpen : ''}`}>
             <button
               type="button"
               className={styles.dropdownToggle}
               aria-expanded={servicesOpen}
               aria-haspopup="true"
-              onClick={() => setServicesOpen(!servicesOpen)}
+              onClick={() => {
+                setServicesOpen(!servicesOpen)
+                setProductsOpen(false)
+              }}
             >
               Services
               <span className={styles.dropdownArrow} aria-hidden="true">▾</span>
             </button>
             <ul className={styles.dropdownMenu}>
+              <li><a href="/recruiting-services" onClick={closeMenu}>Recruiting Services</a></li>
               <li><a href="/club-consulting" onClick={closeMenu}>Club Consulting</a></li>
-              <li><a href="/fuse-id" onClick={closeMenu}>FUSE-ID Recruiting Services</a></li>
             </ul>
           </li>
-          <li><a href="/ai-assistant" onClick={closeMenu}>AI Assistant</a></li>
           <li><a href="/free-resources" onClick={closeMenu}>Free Resources</a></li>
           <li><a href="/blog" onClick={closeMenu}>Blog</a></li>
           <li><a href="/#why-us" onClick={closeMenu}>Why Us</a></li>

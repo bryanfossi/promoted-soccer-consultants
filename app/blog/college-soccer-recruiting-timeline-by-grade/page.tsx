@@ -66,7 +66,7 @@ export default function TimelineArticle() {
           <header className={styles.articleHeader}>
             <span className={styles.articleTag}>Timelines &amp; Planning</span>
             <h1 className="serif">{TITLE}</h1>
-            <p className={styles.byline}>Bryan Fossi &middot; Promoted Soccer Consultants</p>
+            <p className={styles.byline}>Bryan Fossi &middot; Promoted Sports Consultants</p>
           </header>
 
           <p className={styles.lead}>

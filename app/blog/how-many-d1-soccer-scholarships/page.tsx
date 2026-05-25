@@ -30,10 +30,10 @@ const articleSchema = {
   },
   publisher: {
     '@type': 'Organization',
-    name: 'Promoted Soccer Consultants',
+    name: 'Promoted Sports Consultants',
     logo: {
       '@type': 'ImageObject',
-      url: 'https://www.promotedsoccerconsultants.com/promoted-soccer-consultants.png',
+      url: 'https://www.promotedsoccerconsultants.com/psc-logo-full.png',
     },
   },
   datePublished: '2026-04-30',
@@ -104,7 +104,7 @@ export default function D1ScholarshipsArticle() {
               How Many D1 Soccer Scholarships Are There — And What Does That Mean for Your Player?
             </h1>
             <p className={styles.byline}>
-              Bryan Fossi &middot; Promoted Soccer Consultants
+              Bryan Fossi &middot; Promoted Sports Consultants
             </p>
           </header>
 

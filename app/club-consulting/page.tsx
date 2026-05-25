@@ -6,12 +6,12 @@ import styles from './club-consulting.module.css'
 export const metadata = {
   title: 'Club Consulting Services',
   description:
-    "Strategic consulting for soccer clubs and organizations: club audits, coach education, player pathway alignment, parent communication, and IT solutions.",
+    "Strategic consulting for youth sports clubs and organizations: club audits, coach education, player pathway alignment, and parent communication frameworks.",
   alternates: { canonical: '/club-consulting' },
   openGraph: {
-    title: 'Club Consulting Services | Promoted Soccer Consultants',
+    title: 'Club Consulting Services | Promoted Sports Consultants',
     description:
-      'Strategic consulting for soccer clubs: audits, coach education, player pathways, parent communication, IT solutions.',
+      'Strategic consulting for youth sports clubs: audits, coach education, player pathways, and parent communication.',
     url: 'https://www.promotedsoccerconsultants.com/club-consulting',
     type: 'website',
   },
@@ -24,10 +24,10 @@ const serviceSchema = {
   name: 'Club Consulting Services',
   url: 'https://www.promotedsoccerconsultants.com/club-consulting',
   description:
-    'Strategic consulting for soccer clubs and organizations: club audits, coach education, player pathway alignment, parent communication, and IT solutions.',
+    'Strategic consulting for youth sports clubs and organizations: club audits, coach education, player pathway alignment, and parent communication frameworks.',
   provider: { '@id': 'https://www.promotedsoccerconsultants.com#organization' },
   areaServed: { '@type': 'Country', name: 'United States' },
-  serviceType: 'Soccer Club Strategic Consulting',
+  serviceType: 'Youth Sports Club Strategic Consulting',
   audience: {
     '@type': 'Audience',
     audienceType: 'Competitive youth clubs, recreational programs, high school programs',
@@ -40,8 +40,6 @@ const serviceSchema = {
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Coach Education & Support' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Player Pathway Alignment' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Parent Communication Frameworks' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'IT Solutions & Automation' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Club Recruiting Services' } },
     ],
   },
 }
@@ -72,8 +70,8 @@ export default function ClubConsulting() {
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
-            <h1 className="serif">Stronger Soccer Clubs Start With Honest Strategic Guidance</h1>
-            <p>Strategic consulting for youth clubs, recreational programs, and high school programs ready to grow without compromising development.</p>
+            <h1 className="serif">Stronger Clubs Start With Honest Strategic Guidance</h1>
+            <p>Strategic consulting for youth sports clubs, recreational programs, and high school programs ready to grow without compromising development.</p>
             <a href="https://calendar.app.google/96Z4Kgp9mLh35sMj9" className={styles.ctaButton} target="_blank" rel="noopener noreferrer">
               Schedule Free Consultation Call
             </a>
@@ -81,12 +79,12 @@ export default function ClubConsulting() {
           </div>
           <div className={styles.heroImage}>
             <Image
-              src="/promoted-soccer-consultants.png"
+              src="/psc-logo-full.png"
               alt=""
-              width={1024}
-              height={1536}
+              width={1600}
+              height={533}
               priority
-              sizes="(max-width: 768px) 220px, 300px"
+              sizes="(max-width: 768px) 280px, 380px"
             />
           </div>
         </div>
@@ -140,27 +138,29 @@ export default function ClubConsulting() {
                 <li>Expectation-setting frameworks</li>
               </ul>
             </div>
-            <div className={styles.serviceCard}>
-              <h3 className="serif">IT Solutions & Automation</h3>
-              <p>Streamline your club operations with custom technology solutions designed specifically for soccer organizations and high school athletic departments.</p>
-              <ul>
-                <li>Workflow automation</li>
-                <li>Custom website development</li>
-                <li>Registration and payment systems</li>
-                <li>Communication platform integration</li>
-              </ul>
-            </div>
+          </div>
+        </div>
+      </section>
 
-            <div className={styles.serviceCard}>
-              <h3 className="serif">Club Recruiting Services</h3>
-              <p>Comprehensive recruiting support for your entire roster. Every player receives personalized guidance to maximize their college opportunities.</p>
-              <ul>
-                <li>Target school lists for each player</li>
-                <li>12-month recruiting plan</li>
-                <li>Customized player profile resume</li>
-                <li>Club-wide recruiting coordination</li>
-              </ul>
-            </div>
+      {/* Clubstack Callout */}
+      <section className={styles.clubstackCallout}>
+        <div className={styles.container}>
+          <div className={styles.calloutBox}>
+            <div className={styles.calloutBadge}>Looking for software, not consulting?</div>
+            <h2 className="serif">Clubstack handles registration, payments, rosters, scheduling, and recruiting visibility.</h2>
+            <p>
+              The operational side of running a club — registration forms, installment plans,
+              roster management, master schedule, broadcast communication, and a club-wide
+              recruiting dashboard — is exactly what <strong>Clubstack</strong> was built to
+              solve. If you came here for software, that's where to start.
+            </p>
+            <p>
+              Many clubs use both: Clubstack for day-to-day operations, plus a Club Consulting
+              engagement for the strategic work that software can't do.
+            </p>
+            <a href="/clubstack" className={styles.calloutButton}>
+              See Clubstack →
+            </a>
           </div>
         </div>
       </section>

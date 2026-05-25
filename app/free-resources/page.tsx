@@ -5,12 +5,12 @@ import styles from './free-resources.module.css'
 export const metadata = {
   title: 'Free Resources',
   description:
-    'Free college soccer recruiting resources — webinars, videos, and expert guidance to help families navigate the recruiting process.',
+    'Free college recruiting resources — webinars, videos, and expert guidance for athletes and families navigating the recruiting process.',
   alternates: { canonical: '/free-resources' },
   openGraph: {
-    title: 'Free Resources | Promoted Soccer Consultants',
+    title: 'Free Resources | Promoted Sports Consultants',
     description:
-      'Free college soccer recruiting webinars, videos, and expert guidance for families.',
+      'Free college recruiting webinars, videos, and expert guidance for athletes and families.',
     url: 'https://www.promotedsoccerconsultants.com/free-resources',
     type: 'website',
   },
@@ -25,11 +25,12 @@ export default function FreeResourcesPage() {
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <div className={styles.heroBadge}>No Cost, No Catch</div>
-          <h1 className="serif">Free Resources for Soccer Families</h1>
+          <h1 className="serif">Free Resources for Athletes &amp; Families</h1>
           <p>
             Navigating the college recruiting process shouldn&apos;t require a paid consultant to get
-            started. We&apos;re committed to giving every family access to honest, expert guidance —
-            completely free.
+            started. PSC is committed to giving every family access to honest, expert guidance —
+            completely free. The library leads with soccer today and expands as new sports come
+            online.
           </p>
           <a href="#latest-episode" className={styles.heroCta}>
             Watch the Latest Webinar ↓
@@ -44,15 +45,15 @@ export default function FreeResourcesPage() {
             <span className={styles.sectionLabel}>Latest Episode</span>
             <h2 className="serif">Watch Our Most Recent Webinar</h2>
             <p className={styles.subtitle}>
-              Our webinar series breaks down the most important topics in college soccer recruiting —
-              straight from consultants who&apos;ve been in the trenches.
+              Our webinar series breaks down the most important topics in college recruiting —
+              straight from a coach who&apos;s been on both sides of the process.
             </p>
           </div>
 
           <div className={styles.videoWrapper}>
             <iframe
               src="https://www.youtube-nocookie.com/embed/j_XsDcmPAZ0"
-              title="Promoted Soccer Consultants Webinar"
+              title="Promoted Sports Consultants Webinar"
               width="860"
               height="484"
               loading="lazy"
@@ -98,9 +99,9 @@ export default function FreeResourcesPage() {
               <p>How to write a strong first email, what to say on a campus visit, and how to follow up without being annoying.</p>
             </div>
             <div className={styles.topicCard}>
-              <div className={styles.topicIcon}>⚽</div>
+              <div className={styles.topicIcon}>🎯</div>
               <h3 className="serif">Evaluating Fit</h3>
-              <p>How to find schools where your player will thrive — athletically, academically, and personally.</p>
+              <p>How to find schools where your athlete will thrive — athletically, academically, and personally.</p>
             </div>
             <div className={styles.topicCard}>
               <div className={styles.topicIcon}>💰</div>
@@ -117,11 +118,22 @@ export default function FreeResourcesPage() {
           <h2 className="serif">Ready to Go Deeper?</h2>
           <p>
             Free resources are a great start — but if you want a personalized roadmap built around
-            your player&apos;s specific goals and timeline, PSC can help.
+            your athlete&apos;s specific goals and timeline, PSC can help. Try FUSE-ID free, or
+            schedule a call with Bryan.
           </p>
-          <a href="/#contact" className={styles.ctaButton}>
-            Talk to a Consultant
-          </a>
+          <div className={styles.ctaButtons}>
+            <a href="/fuse-id" className={styles.ctaButton}>
+              Explore FUSE-ID
+            </a>
+            <a
+              href="https://calendar.app.google/96Z4Kgp9mLh35sMj9"
+              className={styles.ctaButtonSecondary}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Schedule a Free Consultation
+            </a>
+          </div>
         </div>
       </section>
 

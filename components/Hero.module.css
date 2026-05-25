@@ -26,8 +26,14 @@
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 400px;
+  grid-template-columns: 1fr 420px;
   gap: 4rem;
+  align-items: center;
+}
+
+.heroImageContainer {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -45,7 +51,7 @@
 
 .heroLogo {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   height: auto;
   animation: fadeInUp 0.8s ease 0.3s forwards;
   opacity: 0;
@@ -135,7 +141,7 @@
   }
 
   .heroLogo {
-    max-width: 200px;
+    max-width: 280px;
   }
 
   .heroContent h1 {

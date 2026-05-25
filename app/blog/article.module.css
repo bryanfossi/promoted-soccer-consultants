@@ -151,7 +151,7 @@
 .inlineLink {
   color: var(--primary-green);
   text-decoration: none;
-  border-bottom: 1px solid rgba(13, 92, 61, 0.3);
+  border-bottom: 1px solid rgba(26, 35, 50, 0.3);
   font-weight: 500;
   transition: border-color 0.2s ease, color 0.2s ease;
 }
