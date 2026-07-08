@@ -105,9 +105,11 @@ export default function Home() {
           </p>
           <div className={styles.heroCtas}>
             <a href="#suite" className={styles.btnPrimary}>Explore the products</a>
-            <a href="#ecosystem" className={styles.btnSecondary}>See how they fit together</a>
+            <a href={CALENDAR} className={styles.btnSecondary} target="_blank" rel="noopener noreferrer">
+              Schedule Consultation
+            </a>
           </div>
-          <p className={styles.heroTrust}>Free to start · No credit card · Every sport</p>
+          <p className={styles.heroTrust}>30 minutes · Free · No pitch</p>
         </div>
         <div className={styles.heroPanels} aria-hidden="true">
           <div className={`${styles.panel} ${styles.panelClub}`}>
