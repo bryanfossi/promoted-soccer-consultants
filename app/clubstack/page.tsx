@@ -193,7 +193,7 @@ export default function Clubstack() {
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
-            <div className={styles.heroBadge}>Coming Soon · Join the waitlist</div>
+            <div className={styles.heroBadge}>Coming Soon · Join the waitlist · founding-club pricing</div>
             <h1 className="serif">Run your club. Not your inbox.</h1>
             <p>
               Clubstack handles registration, payments, rosters, scheduling, and communication —

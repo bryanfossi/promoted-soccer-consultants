@@ -134,7 +134,7 @@
   border-radius: 6px;
   padding: 1.5rem 1.75rem;
   margin: 1.5rem 0;
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
 }
 
 .callout p {

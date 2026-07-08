@@ -625,7 +625,7 @@
 }
 
 .pricingMonthly {
-  font-family: 'Crimson Pro', serif;
+  font-family: var(--font-archivo), system-ui, sans-serif;
   font-size: 2rem;
   font-weight: 600;
   color: var(--primary-green);

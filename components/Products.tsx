@@ -5,7 +5,7 @@ const products = [
     name: 'FUSE-ID',
     eyebrow: 'AI College Recruiting Platform',
     description:
-      'Match scoring across 2,400+ programs, AI-drafted coach emails, full recruiting pipeline, offer comparisons. Built for every sport, every division, every income level.',
+      'The AI college recruiting platform for student-athletes — and the parents in their corner. Match scoring across 2,400+ programs, AI-drafted coach emails, full recruiting pipeline, offer comparisons.',
     features: [
       'AI match engine — 8 scoring dimensions',
       'Personalized coach email drafting',
@@ -19,7 +19,7 @@ const products = [
     status: 'Live · Free to start',
   },
   {
-    name: 'Clubstack',
+    name: 'ClubStack',
     eyebrow: 'Club Management Platform',
     description:
       'Run your club. Not your inbox. Registration, payments, rosters, scheduling, and communication — with the only recruiting integration on the market. Built for multi-sport clubs.',
@@ -29,7 +29,7 @@ const products = [
       'Broadcast comms + DMs in one place',
       'Recruiting integration (PSC exclusive)',
     ],
-    cta: 'See Clubstack',
+    cta: 'See ClubStack',
     href: '/clubstack',
     external: false,
     accent: 'gold',
@@ -45,7 +45,7 @@ export default function Products() {
           <div className={styles.eyebrow}>The platforms</div>
           <h2 id="products-heading" className="serif">Two products. One mission. Every sport.</h2>
           <p>
-            FUSE-ID and Clubstack are independent platforms with separate buyers and separate
+            FUSE-ID and ClubStack are independent platforms with separate buyers and separate
             jobs. They feed each other — and they both run on the recruiting expertise PSC has
             been building since day one.
           </p>

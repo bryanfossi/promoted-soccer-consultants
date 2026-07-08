@@ -6,11 +6,11 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.heroContainer}>
         <div className={styles.heroContent}>
-          <h1 className="serif">Recruiting and club operations, redesigned for every sport.</h1>
+          <h1 className="serif">One company. Three tools. Every sport.</h1>
           <p>
-            PSC builds the tools families and clubs actually need — <strong>FUSE-ID</strong> for
-            AI-powered college recruiting, <strong>Clubstack</strong> for running a club — backed
-            by a coach who&apos;s done both.
+            <strong>ClubStack</strong> runs the club. <strong>Ask The Gaffer</strong> preps the
+            coach. <strong>FUSE-ID</strong> gets the family recruited — three tools from a coach
+            who&apos;s hit every one of these problems himself.
           </p>
           <div className={styles.heroCtas}>
             <a
@@ -35,7 +35,7 @@ export default function Hero() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Clubstack waitlist open → clubstack.online
+              ClubStack waitlist open → clubstack.online
             </a>
           </p>
         </div>

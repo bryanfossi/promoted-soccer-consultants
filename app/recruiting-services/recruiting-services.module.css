@@ -300,7 +300,7 @@
   font-size: 4rem;
   font-weight: 600;
   color: var(--primary-green);
-  font-family: 'Crimson Pro', serif;
+  font-family: var(--font-archivo), system-ui, sans-serif;
 }
 
 .packageDescription {

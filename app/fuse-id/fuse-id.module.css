@@ -13,8 +13,12 @@
 
 .hero,
 .container {
-  --fuse-green: #22c55e;
-  --fuse-green-bright: #4ade80;
+  --fuse-green: #22c55e;           /* light-surface accent */
+  --fuse-green-hover: #16a34a;     /* hover/active on light */
+  --fuse-green-bright: #4ade80;    /* accent/text on dark surfaces */
+  --fuse-green-ink: #052e16;       /* text on solid-green buttons — never white/black */
+  --fuse-dark-bg: #0f1120;         /* near-black dark-section background */
+  --fuse-dark-card: #1a1f35;       /* card/elevated surface on the dark field */
   --fuse-green-soft: rgba(34, 197, 94, 0.15);
   --fuse-green-border: rgba(34, 197, 94, 0.5);
 }
@@ -405,7 +409,7 @@
 }
 
 .matchScoreNum {
-  font-family: 'Crimson Pro', serif;
+  font-family: var(--font-archivo), system-ui, sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--primary-green);
@@ -625,7 +629,7 @@
 }
 
 .pricingHeadline {
-  font-family: 'Crimson Pro', serif;
+  font-family: var(--font-archivo), system-ui, sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
   color: var(--primary-green);
