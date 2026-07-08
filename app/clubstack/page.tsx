@@ -6,12 +6,12 @@ import styles from './clubstack.module.css'
 export const metadata = {
   title: 'ClubStack — Club Management Software',
   description:
-    "ClubStack is the only club management platform with a built-in recruiting layer. Registration, payments, rosters, scheduling, and communication — built for multi-sport clubs.",
+    "ClubStack is a club management platform with a built-in recruiting layer most club software doesn't have. Registration, payments, rosters, scheduling, and communication — built for multi-sport clubs.",
   alternates: { canonical: '/clubstack' },
   openGraph: {
     title: 'ClubStack | Promoted Sports Consultants',
     description:
-      'Run your club. Not your inbox. ClubStack handles registration, payments, rosters, scheduling, and communication — with the only recruiting integration on the market.',
+      'Run your club. Not your inbox. ClubStack handles registration, payments, rosters, scheduling, and communication — with a built-in recruiting integration most club software lacks.',
     url: 'https://www.promotedsoccerconsultants.com/clubstack',
     type: 'website',
   },
@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     q: 'How is ClubStack different from GotSport, TeamSnap, or SportsEngine?',
-    a: 'It is the only club platform with a built-in recruiting layer. The Recruiting Integration Module gives directors a club-wide view of every player’s recruiting status and bridges natively into FUSE-ID. No other club platform is in the recruiting business.',
+    a: 'It has a built-in recruiting layer most club software doesn’t. The Recruiting Integration Module gives directors a club-wide view of every player’s recruiting status and bridges natively into FUSE-ID — recruiting visibility built in from day one, not bolted on.',
   },
   {
     q: 'How much does it cost?',
@@ -248,8 +248,8 @@ export default function ClubStack() {
             <h1 className="serif">Run your club. Not your inbox.</h1>
             <p>
               ClubStack handles registration, payments, rosters, scheduling, and communication —
-              and adds the only recruiting integration on the market. Built for multi-sport clubs
-              by a coach who runs one.
+              and adds a recruiting integration that most club software lacks. Built for multi-sport
+              clubs by a coach who runs one.
             </p>
             <div className={styles.heroCtas}>
               <a
@@ -425,10 +425,10 @@ export default function ClubStack() {
         <div className={styles.container}>
           <div className={styles.differentiatorBox}>
             <div className={styles.differentiatorBadge}>The PSC differentiator</div>
-            <h2 className="serif">The only club platform with a recruiting layer.</h2>
+            <h2 className="serif">A club platform with recruiting built in.</h2>
             <p>
-              Because no other platform is in the recruiting business. ClubStack's Recruiting
-              Integration Module gives staff a club-wide view of every player's recruiting status,
+              Recruiting is in PSC's DNA — built in from day one, not bolted on. ClubStack's
+              Recruiting Integration Module gives staff a club-wide view of every player's recruiting status,
               division targets, last coach contact, and FUSE-ID enrollment — and gives families a
               clean check-in workflow to update what's actually happening with their player.
             </p>

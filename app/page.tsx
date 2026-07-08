@@ -105,11 +105,9 @@ export default function Home() {
           </p>
           <div className={styles.heroCtas}>
             <a href="#suite" className={styles.btnPrimary}>Explore the products</a>
-            <a href={CALENDAR} className={styles.btnSecondary} target="_blank" rel="noopener noreferrer">
-              Schedule Consultation
-            </a>
+            <a href="#ecosystem" className={styles.btnSecondary}>See how they fit together</a>
           </div>
-          <p className={styles.heroTrust}>30 minutes · Free · No pitch</p>
+          <p className={styles.heroTrust}>Free to start · No credit card · Every sport</p>
         </div>
         <div className={styles.heroPanels} aria-hidden="true">
           <div className={`${styles.panel} ${styles.panelClub}`}>
@@ -164,10 +162,12 @@ export default function Home() {
           <div className={styles.prodHead}>
             <Image src="/clubstack-mark.png" alt="ClubStack" width={223} height={258} className={styles.markShield} />
             <span className={styles.sectionEyebrow}>ClubStack · runs the club</span>
+            <span className={styles.comingSoon}>Coming soon · waitlist open</span>
             <h2 className={`serif ${styles.prodTagline}`}>Run your club. Not your inbox.</h2>
             <p>
-              The all-in-one club platform — and the only one with a built-in recruiting layer.
-              Replace the registration site, the payments spreadsheet, and five group texts.
+              The all-in-one club platform — with a built-in recruiting layer most club software
+              doesn’t have. Replace the registration site, the payments spreadsheet, and five group
+              texts.
             </p>
           </div>
 
@@ -199,11 +199,11 @@ export default function Home() {
           </div>
 
           <div className={styles.onlyBand}>
-            <span className={styles.onlyBadge}>Only in ClubStack</span>
+            <span className={styles.onlyBadge}>The ClubStack difference</span>
             <p>
               The Recruiting Integration Module gives directors a club-wide view of every player’s
-              recruiting status — and bridges natively into FUSE-ID. No other club platform is in
-              the recruiting business.
+              recruiting status — and bridges natively into FUSE-ID. Recruiting visibility is built
+              in from day one, not bolted on.
             </p>
           </div>
 
@@ -335,8 +335,8 @@ export default function Home() {
           </div>
 
           <div className={styles.compareBand}>
-            NCSA, SportsRecruits, and FieldLevel run <strong>$99–$200+/month</strong>. FUSE-ID is
-            free to start — <strong>most athletes pay under $10/month</strong>.
+            NCSA, SportsRecruits, and FieldLevel typically run <strong>$100+/month</strong>. FUSE-ID
+            is free to start — <strong>most plans are under $10/month</strong>.
           </div>
 
           <a href={REGISTER} className={styles.fuseCta} target="_blank" rel="noopener noreferrer">
@@ -346,7 +346,7 @@ export default function Home() {
       </section>
 
       {/* 6 · Ecosystem triangle */}
-      <section className={styles.eco}>
+      <section className={styles.eco} id="ecosystem">
         <div className={styles.container}>
           <span className={styles.sectionEyebrow}>The youth-sports triangle</span>
           <h2 className={`serif ${styles.ecoTitle}`}>Club ⇄ Coach ⇄ Athlete + Family.</h2>
@@ -407,6 +407,13 @@ export default function Home() {
               <a href="/club-consulting" className={styles.serviceLink}>See Club Consulting →</a>
             </div>
           </div>
+          <p className={styles.servicesConsult}>
+            Not sure which fits?{' '}
+            <a href={CALENDAR} target="_blank" rel="noopener noreferrer">
+              Book a free 30-minute consult →
+            </a>{' '}
+            <span>No pitch.</span>
+          </p>
         </div>
       </section>
 

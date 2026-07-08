@@ -28,7 +28,7 @@ Every piece targets ONE buyer and uses that buyer's CTA. Flag anything that serv
   - **FUSE-ID = green** (NOT blue): light `#22C55E`, hover `#16A34A`; dark-surface `#4ADE80`; text on green buttons **always `#052E16`** (never white/black); dark bg `#0F1120`, cards `#1A1F35`.
   - **ClubStack** = navy `#1A3A5C` + gold `#C9A227` (wordmark: "Club" navy, "Stack" gold); neutrals Ink `#0F2437` / Slate `#5B6B7A` / Mist `#EEF2F6`; status Pitch Green `#2E7D53` / Whistle Red `#C0392B`.
   - **Ask The Gaffer** = amber `#F5A623`, hover `#FFC55C`, on dark base `#0C0F14` / surface `#141920` / elevated `#1C2433`; text `#EDF0F4` / secondary `#8A97AE`.
-- Reconcile in Sprint A: live `app/globals.css` still ships navy `#1A2332`, gold `#D4A574`, and Crimson Pro + Work Sans fonts. FUSE-ID green (`#22C55E`/`#4ADE80`) already ships and stands.
+- Live `app/globals.css` ships the v3 palette (navy `#1A3A5C`, gold `#C9A227`) and Archivo + Inter, reconciled in Sprint A. FUSE-ID green (`#22C55E`/`#4ADE80`) ships and stands.
 
 ## Typography (PSC.com)
 - PSC.com uses **Archivo + Inter sitewide** (Archivo = display/headings, Inter = UI/body). This supersedes Crimson Pro + Work Sans.

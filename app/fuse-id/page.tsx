@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: 'FUSE-ID | Promoted Sports Consultants',
     description:
-      'AI-powered college recruiting for student-athletes and parents. 2,400+ programs, AI coach emails, offer tracking. Free to start — most athletes pay under $10/month.',
+      'AI-powered college recruiting for student-athletes and parents. 2,400+ programs, AI coach emails, offer tracking. Free to start — most plans are under $10/month.',
     url: 'https://www.promotedsoccerconsultants.com/fuse-id',
     type: 'website',
   },
@@ -123,7 +123,7 @@ const sportTiers = [
 ]
 
 const compareRows = [
-  ['Monthly cost', 'Free to start · most pay under $10/mo', '$99–$200+ / month'],
+  ['Monthly cost', 'Free to start · most plans under $10/mo', 'Typically $100+/mo'],
   ['AI-native match + email drafting', 'Built in', 'Add-on or absent'],
   ['You own every coach relationship', 'Always — no agent layer', 'Varies by model'],
   ['Free, fully usable tier', 'Yes — 1 match run, full dashboard', 'Rare'],
@@ -168,11 +168,11 @@ const tokenPacks = [
 const faqs = [
   {
     q: 'How much does FUSE-ID cost?',
-    a: 'Free to start, no credit card. Starter is $9.99/month (20 AI tokens); Pro is $14.99/month (30 tokens, email analyzer, and parent access). Token packs run from $2.99 (Mini 5) to $14.99 (Max 30). Most athletes pay under $10/month.',
+    a: 'Free to start, no credit card. Starter is $9.99/month (20 AI tokens); Pro is $14.99/month (30 tokens, email analyzer, and parent access). Token packs run from $2.99 (Mini 5) to $14.99 (Max 30). Most plans are under $10/month.',
   },
   {
     q: 'How is FUSE-ID different from NCSA, SportsRecruits, or FieldLevel?',
-    a: 'Those platforms run $99–$200+/month. FUSE-ID is AI-native and free to start — the same recruiting intelligence without the price tag, and without a pay-to-play exposure model. You own every coach relationship.',
+    a: 'Those platforms typically run well over $100/month. FUSE-ID is AI-native and free to start — the same recruiting intelligence without the price tag, and without a pay-to-play exposure model. You own every coach relationship.',
   },
   {
     q: 'What sports and divisions are covered?',
@@ -242,7 +242,7 @@ export default function FuseId() {
               </a>
             </div>
             <p className={styles.heroSubtext}>
-              No credit card · Most athletes pay under $10/month
+              No credit card · Most plans are under $10/month
             </p>
           </div>
         </div>
@@ -365,8 +365,8 @@ export default function FuseId() {
         <div className={styles.container}>
           <h2 className="serif">The same intelligence, a fraction of the price.</h2>
           <p className={styles.subtitle}>
-            NCSA, SportsRecruits, and FieldLevel run $99–$200+ per month. FUSE-ID is free to start,
-            and most athletes pay under $10/month.
+            NCSA, SportsRecruits, and FieldLevel typically run $100+ per month. FUSE-ID is free to
+            start, and most plans are under $10/month.
           </p>
           <div className={styles.compareTableWrap}>
             <table className={styles.compareTable}>
@@ -418,7 +418,7 @@ export default function FuseId() {
           <h2 className="serif">Pricing that works for actual families.</h2>
           <p className={styles.subtitle}>
             Free to start, no credit card. Add tokens when you need a burst, or go Pro for a full
-            recruiting season. Most athletes pay under $10/month.
+            recruiting season. Most plans are under $10/month.
           </p>
           <div className={styles.pricingGrid}>
             {pricingTiers.map((tier) => (
