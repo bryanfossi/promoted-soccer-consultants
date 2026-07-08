@@ -13,8 +13,12 @@
 
 .hero,
 .container {
-  --fuse-green: #22c55e;
-  --fuse-green-bright: #4ade80;
+  --fuse-green: #22c55e;           /* light-surface accent */
+  --fuse-green-hover: #16a34a;     /* hover/active on light */
+  --fuse-green-bright: #4ade80;    /* accent/text on dark surfaces */
+  --fuse-green-ink: #052e16;       /* text on solid-green buttons — never white/black */
+  --fuse-dark-bg: #0f1120;         /* near-black dark-section background */
+  --fuse-dark-card: #1a1f35;       /* card/elevated surface on the dark field */
   --fuse-green-soft: rgba(34, 197, 94, 0.15);
   --fuse-green-border: rgba(34, 197, 94, 0.5);
 }
@@ -100,20 +104,21 @@
 
 .ctaPrimary {
   display: inline-block;
-  background: white;
-  color: var(--primary-green);
+  background: var(--fuse-green);
+  color: var(--fuse-green-ink); /* #052E16 — never white/black on green */
   padding: 1.1rem 2.5rem;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.05rem;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 20px rgba(34, 197, 94, 0.35);
 }
 
 .ctaPrimary:hover {
+  background: var(--fuse-green-hover);
   transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 28px rgba(34, 197, 94, 0.45);
 }
 
 .ctaSecondary {
@@ -405,7 +410,7 @@
 }
 
 .matchScoreNum {
-  font-family: 'Crimson Pro', serif;
+  font-family: var(--font-archivo), system-ui, sans-serif;
   font-size: 1.3rem;
   font-weight: 600;
   color: var(--primary-green);
@@ -625,7 +630,7 @@
 }
 
 .pricingHeadline {
-  font-family: 'Crimson Pro', serif;
+  font-family: var(--font-archivo), system-ui, sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
   color: var(--primary-green);
@@ -642,30 +647,31 @@
 
 .pricingCta {
   display: inline-block;
-  background: var(--primary-green);
-  color: white;
+  background: var(--fuse-green);
+  color: var(--fuse-green-ink); /* #052E16 — never white/black on green */
   padding: 0.85rem 1.5rem;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.98rem;
   transition: all 0.25s ease;
   margin-top: auto;
 }
 
 .pricingCta:hover {
-  background: var(--secondary-green);
+  background: var(--fuse-green-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(26, 35, 50, 0.25);
+  box-shadow: 0 6px 18px rgba(34, 197, 94, 0.35);
 }
 
 .pricingCtaHighlight {
-  background: var(--accent-gold);
+  background: var(--fuse-green);
+  color: var(--fuse-green-ink);
 }
 
 .pricingCtaHighlight:hover {
-  background: #c89560;
-  box-shadow: 0 6px 18px rgba(212, 165, 116, 0.4);
+  background: var(--fuse-green-hover);
+  box-shadow: 0 6px 18px rgba(34, 197, 94, 0.4);
 }
 
 .pricingFootnote {
@@ -819,5 +825,264 @@
 
   .matchScoreWrap {
     grid-template-columns: 1fr auto;
+  }
+}
+
+/* ---- FUSE-ID hero logo ---- */
+.heroLogo {
+  display: block;
+  height: 62px;
+  width: auto;
+  margin: 0 auto 1.5rem;
+}
+
+/* ---- FUSE-ID wordmark (legacy text lockup; superseded by .heroLogo image) ---- */
+.wordmark {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+  color: white;
+  margin-bottom: 1.25rem;
+}
+
+.wordmarkId {
+  color: var(--fuse-green-bright); /* #4ADE80 on the dark hero; #22C55E on light */
+}
+
+/* ---- Comparison ---- */
+.compare {
+  padding: 6rem 2rem;
+  background: var(--light-gray);
+}
+
+.compare h2 {
+  font-size: 2.75rem;
+  font-weight: 400;
+  color: var(--primary-green);
+  text-align: center;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.03em;
+}
+
+.compareTableWrap {
+  max-width: 900px;
+  margin: 3rem auto 0;
+  overflow-x: auto;
+}
+
+.compareTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.compareTable th,
+.compareTable td {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  border-bottom: 1px solid var(--medium-gray);
+  font-size: 0.98rem;
+  color: var(--text-dark);
+  vertical-align: top;
+}
+
+.compareTable thead th {
+  background: var(--primary-green);
+  color: white;
+  font-weight: 600;
+}
+
+.compareLabel {
+  font-weight: 600;
+  color: var(--primary-green);
+}
+
+.compareTable .compareUs {
+  background: rgba(34, 197, 94, 0.08);
+  color: #052e16;
+  font-weight: 600;
+}
+
+.compareTable thead th.compareUs {
+  background: var(--fuse-green);
+  color: var(--fuse-green-ink);
+}
+
+/* ---- Pricing price + features ---- */
+.pricingPrice {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.pricingPrice span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  margin-left: 0.25rem;
+}
+
+.pricingFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.pricingFeatures li {
+  position: relative;
+  padding: 0.4rem 0 0.4rem 1.6rem;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+.pricingFeatures li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--fuse-green);
+  font-weight: 700;
+}
+
+/* ---- Token packs ---- */
+.packs {
+  max-width: 780px;
+  margin: 3rem auto 0;
+  text-align: center;
+}
+
+.packsLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
+}
+
+.packsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.packCard {
+  background: white;
+  border: 1px solid var(--medium-gray);
+  border-radius: 10px;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.packName {
+  font-weight: 700;
+  color: var(--primary-green);
+}
+
+.packTokens {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.packPrice {
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #052e16;
+}
+
+/* ---- FAQ ---- */
+.faq {
+  padding: 6rem 2rem;
+  background: white;
+}
+
+.faq h2 {
+  font-size: 2.75rem;
+  font-weight: 400;
+  color: var(--primary-green);
+  text-align: center;
+  margin-bottom: 2.5rem;
+  letter-spacing: -0.03em;
+}
+
+.faqList {
+  max-width: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.faqItem {
+  background: var(--light-gray);
+  border: 1px solid var(--medium-gray);
+  border-radius: 10px;
+  padding: 0 1.5rem;
+}
+
+.faqItem summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 1.25rem 0;
+  font-weight: 600;
+  color: var(--primary-green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faqItem summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqItem summary::after {
+  content: '+';
+  color: var(--fuse-green);
+  font-size: 1.4rem;
+  font-weight: 400;
+  flex-shrink: 0;
+}
+
+.faqItem[open] summary::after {
+  content: '–';
+}
+
+.faqItem p {
+  padding: 0 0 1.35rem;
+  color: var(--text-dark);
+  line-height: 1.7;
+}
+
+/* ---- Disclaimer ---- */
+.disclaimerSection {
+  padding: 2.5rem 2rem 4rem;
+  background: white;
+}
+
+.disclaimer {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-light);
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .packsRow {
+    grid-template-columns: 1fr;
   }
 }

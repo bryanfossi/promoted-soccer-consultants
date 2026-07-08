@@ -1,24 +1,25 @@
 import type { Metadata } from 'next'
-import { Crimson_Pro, Work_Sans } from 'next/font/google'
+import { Archivo, Inter } from 'next/font/google'
 import './globals.css'
 
-const crimsonPro = Crimson_Pro({
-  subsets: ['latin'],
-  weight: ['300', '400', '600'],
-  variable: '--font-crimson-pro',
-})
-
-const workSans = Work_Sans({
+// PSC.com master type: Archivo (display) + Inter (body). Sitewide.
+const archivo = Archivo({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
-  variable: '--font-work-sans',
+  variable: '--font-archivo',
+})
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-inter',
 })
 
 const SITE_URL = 'https://www.promotedsoccerconsultants.com'
 const SITE_NAME = 'Promoted Sports Consultants'
 const SITE_LEGAL_NAME = 'Promoted Soccer Consultants, LLC'
 const DEFAULT_DESCRIPTION =
-  'PSC is a multi-sport recruiting and club-operations company: FUSE-ID for AI-powered college recruiting, Clubstack for running a club, plus Recruiting Services and Club Consulting from a former college coach.'
+  'PSC is a multi-sport recruiting and club-operations company: FUSE-ID for AI-powered college recruiting, ClubStack for running a club, plus Recruiting Services and Club Consulting from a former college coach.'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -182,7 +183,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }}
         />
       </head>
-      <body className={`${crimsonPro.variable} ${workSans.variable}`}>{children}</body>
+      <body className={`${archivo.variable} ${inter.variable}`}>{children}</body>
     </html>
   )
 }

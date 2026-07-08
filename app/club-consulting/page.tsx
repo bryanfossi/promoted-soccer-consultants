@@ -142,24 +142,48 @@ export default function ClubConsulting() {
         </div>
       </section>
 
-      {/* Clubstack Callout */}
+      {/* Custom Club Solutions */}
+      <section className={styles.customSolutions}>
+        <div className={styles.container}>
+          <div className={styles.customBox}>
+            <div className={styles.customBadge}>Custom Club Solutions</div>
+            <h2 className="serif">Have a problem you can&apos;t solve off the shelf?</h2>
+            <p>
+              Beyond the four core areas, PSC scopes custom engagements for the operational,
+              technical, or recruiting problems a club can&apos;t solve with software or a standard
+              playbook. We don&apos;t promise a specific fix before we understand the problem — the
+              CTA is always the conversation.
+            </p>
+            <a
+              href="https://calendar.app.google/96Z4Kgp9mLh35sMj9"
+              className={styles.customButton}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Start with a discovery call →
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ClubStack Callout */}
       <section className={styles.clubstackCallout}>
         <div className={styles.container}>
           <div className={styles.calloutBox}>
             <div className={styles.calloutBadge}>Looking for software, not consulting?</div>
-            <h2 className="serif">Clubstack handles registration, payments, rosters, scheduling, and recruiting visibility.</h2>
+            <h2 className="serif">ClubStack handles registration, payments, rosters, scheduling, and recruiting visibility.</h2>
             <p>
               The operational side of running a club — registration forms, installment plans,
               roster management, master schedule, broadcast communication, and a club-wide
-              recruiting dashboard — is exactly what <strong>Clubstack</strong> was built to
+              recruiting dashboard — is exactly what <strong>ClubStack</strong> was built to
               solve. If you came here for software, that's where to start.
             </p>
             <p>
-              Many clubs use both: Clubstack for day-to-day operations, plus a Club Consulting
+              Many clubs use both: ClubStack for day-to-day operations, plus a Club Consulting
               engagement for the strategic work that software can't do.
             </p>
             <a href="/clubstack" className={styles.calloutButton}>
-              See Clubstack →
+              See ClubStack →
             </a>
           </div>
         </div>

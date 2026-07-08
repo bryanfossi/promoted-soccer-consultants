@@ -6,21 +6,23 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // statusCode: 301 set explicitly — Next.js `permanent: true` emits 308;
+      // these GET-only marketing/canonical redirects use a literal 301.
       {
         source: '/:path*',
         has: [{ type: 'host', value: 'promotedsoccerconsultants.com' }],
         destination: 'https://www.promotedsoccerconsultants.com/:path*',
-        permanent: true,
+        statusCode: 301,
       },
       {
         source: '/ai-assistant',
         destination: '/fuse-id',
-        permanent: true,
+        statusCode: 301,
       },
       {
         source: '/services',
         destination: '/recruiting-services',
-        permanent: true,
+        statusCode: 301,
       },
     ]
   },

@@ -6,56 +6,66 @@
 
 :root {
   /*
-    PSC parent-brand palette — refreshed 2026-05-13 to align with the new PSC
-    logo (silver/platinum ascending bars on dark navy).
+    PSC master palette — v3 (see docs/brand/psc-brand-kit.md).
 
     Token notes:
-    - --primary-green / --secondary-green: these are LEGACY token names from
-      the original soccer-recruiting consultancy era. Despite the names, the
-      VALUES are now navy. The names are kept to avoid a sweeping rename
-      across every component CSS file. Future cleanup can rename them
-      properly when convenient. They remain the PRIMARY brand color on light
-      sections (headings, CTAs, links).
-    - --accent-silver / --accent-silver-bright: parent-brand accent.
-      Replaces the role gold used to play on light surfaces. Use for
-      subtle borders, pill badges, hover states on PSC parent-brand pages.
-    - --accent-gold: SECONDARY accent. Now reserved for (a) "Most Popular"
-      pricing-tier callouts, (b) Clubstack-themed surfaces and CTAs (where
-      Clubstack owns the gold accent in the product family), (c) section
-      heading color on dark sections (Footer, Resources, notice blocks).
-      Do NOT use on white/light-gray sections — keeps gold meaningful.
-    - --dark-navy: dark section BACKGROUND only. Same value as primary now,
-      but semantically distinct — used as a fill, not as a foreground color.
-    - Focus indicator: --accent-gold on every surface (set in :focus-visible).
+    - --primary-green / --secondary-green: LEGACY token NAMES kept to avoid a
+      sweeping rename across component CSS. VALUES are v3 navy: --primary-green
+      is the master navy (#1A3A5C) used for headings, CTAs, links on light
+      sections; --secondary-green is deep navy (#0F1A2E) used as the hero
+      gradient partner and darker layers.
+    - --accent-gold: master gold (#C9A227). Reserved for "Most Popular" pricing
+      callouts, dark-section headings, and ClubStack navy/gold surfaces. Do NOT
+      use on white/light-gray sections.
+    - --accent-silver / --accent-silver-bright: parent-brand silver accent
+      (subtle borders, pill badges, hover on PSC parent surfaces).
+    - --dark-navy: deep navy (#0F1A2E) — dark section BACKGROUND fill only.
+    - Focus indicator: --accent-gold on every surface (:focus-visible).
 
-    Product children own their own accents:
-    - FUSE-ID (fuse-id.online): lime green (#22c55e-ish, owned by product)
-    - Clubstack (clubstack.online): gold (#d4a574, our --accent-gold)
-    PSC parent surfaces (this site, except the products' landing pages) use
-    navy + silver. Within /fuse-id and /clubstack pages on this site, the
-    product's accent color may overlay the navy base.
+    Product children own their own accents, scoped to their surfaces:
+    - FUSE-ID (/fuse-id, fuse-id.online): GREEN (#22C55E light / #4ADE80 dark,
+      text-on-green #052E16). Never blue.
+    - ClubStack (/clubstack, clubstack.online): navy + gold.
+    - Ask The Gaffer (/ask-the-gaffer, askthegaffer.io): amber on dark
+      (--atg-* block below).
+    Product accents never appear on PSC parent-brand surfaces.
   */
-  --primary-green: #1a2332;
-  --secondary-green: #2c3e57;
-  --accent-gold: #d4a574;
+  --primary-green: #1a3a5c;
+  --secondary-green: #0f1a2e;
+  --accent-gold: #c9a227;
   --accent-silver: #c8d1da;
   --accent-silver-bright: #e5ecf2;
-  --dark-navy: #1a2332;
+  --dark-navy: #0f1a2e;
   --light-gray: #f8f9fa;
   --medium-gray: #e5e7eb;
   --text-dark: #2c3e50;
   --text-light: #6b7280;
+
+  /* Ask The Gaffer product tokens — amber on dark. Used on /ask-the-gaffer (Sprint B). */
+  --atg-amber: #f5a623;
+  --atg-amber-hover: #ffc55c;
+  --atg-base: #0c0f14;
+  --atg-surface: #141920;
+  --atg-elevated: #1c2433;
+  --atg-text: #edf0f4;
+  --atg-text-secondary: #8a97ae;
 }
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
   color: var(--text-dark);
   line-height: 1.7;
   overflow-x: hidden;
 }
 
+/*
+  Legacy class name kept to avoid a sitewide className sweep. PSC.com uses
+  Archivo (display) + Inter (body); `.serif` now renders Archivo, the display
+  face — it is NOT a serif. Product font families are never loaded on PSC.com.
+*/
 .serif {
-  font-family: 'Crimson Pro', serif;
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  letter-spacing: -0.02em;
 }
 
 html {

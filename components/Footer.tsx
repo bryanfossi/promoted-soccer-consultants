@@ -19,7 +19,8 @@ export default function Footer() {
         <div className={styles.footerSection}>
           <h4 className="serif">Products</h4>
           <a href="/fuse-id">FUSE-ID</a>
-          <a href="/clubstack">Clubstack</a>
+          <a href="/clubstack">ClubStack</a>
+          <a href="/ask-the-gaffer">Ask The Gaffer</a>
         </div>
         <div className={styles.footerSection}>
           <h4 className="serif">Services</h4>
@@ -46,8 +47,8 @@ export default function Footer() {
           not communicate with college coaches on behalf of athletes.
         </p>
         <p>
-          <strong>Clubstack</strong> is a club management software platform operated by
-          Promoted Soccer Consultants, LLC. Clubstack is a business operations tool for clubs
+          <strong>ClubStack</strong> is a club management software platform operated by
+          Promoted Soccer Consultants, LLC. ClubStack is a business operations tool for clubs
           and is not a youth-protection, background-check, or sanctioning organization.
         </p>
         <p>

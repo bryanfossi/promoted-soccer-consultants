@@ -292,3 +292,121 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* ---- Custom Club Solutions (master navy/gold) ---- */
+.customSolutions {
+  padding: 5rem 2rem 2rem;
+  background: var(--light-gray);
+}
+
+.customBox {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid var(--medium-gray);
+  border-left: 4px solid var(--accent-gold);
+  border-radius: 14px;
+  padding: 2.5rem;
+}
+
+.customBadge {
+  display: inline-block;
+  background: rgba(201, 162, 39, 0.15);
+  color: #8a6d15;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.customBox h2 {
+  color: var(--primary-green);
+  font-size: clamp(1.5rem, 2.8vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.customBox p {
+  color: var(--text-dark);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.customButton {
+  display: inline-block;
+  background: var(--primary-green);
+  color: white;
+  font-weight: 600;
+  padding: 0.85rem 1.7rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.customButton:hover {
+  background: var(--secondary-green);
+  transform: translateY(-2px);
+}
+
+/* ---- ClubStack callout (navy/gold band) ---- */
+.clubstackCallout {
+  padding: 3rem 2rem 5rem;
+  background: var(--light-gray);
+}
+
+.calloutBox {
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+  color: white;
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+}
+
+.calloutBadge {
+  display: inline-block;
+  background: var(--accent-gold);
+  color: var(--primary-green);
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  margin-bottom: 1.25rem;
+}
+
+.calloutBox h2 {
+  color: white;
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.calloutBox p {
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.calloutButton {
+  display: inline-block;
+  margin-top: 0.75rem;
+  background: var(--accent-gold);
+  color: var(--primary-green);
+  font-weight: 700;
+  padding: 0.9rem 1.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.calloutButton:hover {
+  transform: translateY(-3px);
+}
