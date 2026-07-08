@@ -40,7 +40,8 @@ EDIT `app/fuse-id/page.tsx`, `app/fuse-id/fuse-id.module.css`, `next.config.js`,
 ## Acceptance criteria
 - [ ] `npm run build` clean.
 - [ ] `/fuse-id` renders as SaaS page; hero CTA opens fuse-id.online/register.
-- [ ] Green buttons use `#052E16` labels; no electric-blue anywhere.
+- [ ] **Every solid-green CTA uses `#052E16` text; no white or black text on green anywhere.**
+- [ ] No electric-blue anywhere.
 - [ ] `/ai-assistant` deleted; visiting it 301s to `/fuse-id`; no internal links remain.
 - [ ] No Stripe checkout links on `/fuse-id` (they live only on `/recruiting-services`).
 - [ ] SoftwareApplication + FAQPage schema valid; sitemap updated.

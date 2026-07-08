@@ -75,6 +75,9 @@ export default function Navbar() {
               <li>
                 <a href="/clubstack" onClick={closeMenu}>Clubstack</a>
               </li>
+              <li>
+                <a href="/ask-the-gaffer" onClick={closeMenu}>Ask The Gaffer</a>
+              </li>
             </ul>
           </li>
           <li className={`${styles.dropdown} ${servicesOpen ? styles.dropdownOpen : ''}`}>

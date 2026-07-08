@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE}/recruiting-services`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${BASE}/club-consulting`, lastModified: now, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${BASE}/fuse-id`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${BASE}/ask-the-gaffer`, lastModified: now, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${BASE}/free-resources`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${BASE}/blog`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     {
