@@ -45,6 +45,44 @@ const breadcrumbSchema = {
   ],
 }
 
+const faqs = [
+  {
+    q: 'What does ClubStack replace?',
+    a: 'The patchwork most clubs run today — a registration platform, a payments spreadsheet, a messaging app, and group texts. ClubStack handles registration, payments, rosters, scheduling, and communication in one place.',
+  },
+  {
+    q: 'How is ClubStack different from GotSport, TeamSnap, or SportsEngine?',
+    a: 'It is the only club platform with a built-in recruiting layer. The Recruiting Integration Module gives directors a club-wide view of every player’s recruiting status and bridges natively into FUSE-ID. No other club platform is in the recruiting business.',
+  },
+  {
+    q: 'How much does it cost?',
+    a: 'Flat monthly pricing by org size, with no per-player fees: Free (≤25 players), Team $49, Starter $129, Club $249 (recruiting unlocks here), Academy $449, and Enterprise (custom). Annual billing is about 15% off.',
+  },
+  {
+    q: 'Is ClubStack only for soccer?',
+    a: 'No. ClubStack is sport-agnostic — registration, payments, rosters, scheduling, and communication work for any club. It was built first with competitive soccer clubs, which is where the workflows were pressure-tested.',
+  },
+  {
+    q: 'When can we start?',
+    a: 'ClubStack is in launch prep. Join the waitlist for early access and founding-club pricing — founding clubs get a direct line to Bryan when their club comes online.',
+  },
+  {
+    q: 'Is ClubStack a background-check or sanctioning organization?',
+    a: 'No. ClubStack is a business-operations tool for clubs. It is not a youth-protection, background-check, or sanctioning organization.',
+  },
+]
+
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  '@id': 'https://www.promotedsoccerconsultants.com/clubstack#faq',
+  mainEntity: faqs.map((f) => ({
+    '@type': 'Question',
+    name: f.q,
+    acceptedAnswer: { '@type': 'Answer', text: f.a },
+  })),
+}
+
 const pains = [
   {
     title: 'Bloated tools nobody actually uses',
@@ -186,6 +224,10 @@ export default function ClubStack() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <Navbar />
 
@@ -470,6 +512,21 @@ export default function ClubStack() {
               from a real Tuesday-night practice or Saturday-morning tournament. No
               outsiders-guessing-what-clubs-need product design.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className={styles.faq}>
+        <div className={styles.container}>
+          <h2 className="serif">ClubStack, answered.</h2>
+          <div className={styles.faqList}>
+            {faqs.map((f) => (
+              <details key={f.q} className={styles.faqItem}>
+                <summary>{f.q}</summary>
+                <p>{f.a}</p>
+              </details>
+            ))}
           </div>
         </div>
       </section>
