@@ -142,7 +142,7 @@ export default function TimelineArticle() {
             The major calendar inflection for D1 men&apos;s and women&apos;s soccer typically
             falls in this window, allowing coaches to begin direct communication. Specific dates
             shift; verify the current calendar with your consultant or the{' '}
-            <a href="/ai-assistant" className={styles.inlineLink}>PSC AI Assistant</a>.
+            <a href="/fuse-id" className={styles.inlineLink}>PSC AI Assistant</a>.
           </p>
 
           <h2 className="serif">11th Grade — The Inflection Point</h2>
