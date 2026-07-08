@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import styles from './clubstack.module.css'
@@ -235,6 +236,14 @@ export default function ClubStack() {
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
+            <Image
+              src="/clubstack-mark.png"
+              alt="ClubStack"
+              width={223}
+              height={258}
+              priority
+              className={styles.heroMark}
+            />
             <div className={styles.heroBadge}>Coming Soon · Join the waitlist · founding-club pricing</div>
             <h1 className="serif">Run your club. Not your inbox.</h1>
             <p>

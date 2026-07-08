@@ -57,6 +57,14 @@
   opacity: 0.95;
 }
 
+.heroMark {
+  display: block;
+  height: 76px;
+  width: auto;
+  margin: 0 auto 1.5rem;
+  filter: drop-shadow(0 4px 22px rgba(0, 0, 0, 0.45));
+}
+
 .heroBadge {
   display: inline-block;
   background: rgba(212, 165, 116, 0.18);
