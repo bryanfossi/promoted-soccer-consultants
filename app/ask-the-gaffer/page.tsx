@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import styles from './ask-the-gaffer.module.css'
@@ -155,6 +156,14 @@ export default function AskTheGaffer() {
       <section className={styles.hero}>
         <div className={styles.container}>
           <div className={styles.heroContent}>
+            <Image
+              src="/ask-the-gaffer.png"
+              alt="The Gaffer"
+              width={1254}
+              height={1254}
+              priority
+              className={styles.heroPortrait}
+            />
             <div className={styles.heroBadge}>Waitlist open · Launching August 2026</div>
             <h1 className="serif">It already knows your team.</h1>
             <p className={styles.heroLede}>

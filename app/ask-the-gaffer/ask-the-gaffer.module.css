@@ -93,6 +93,18 @@
   margin: 0 auto;
 }
 
+.heroPortrait {
+  display: block;
+  width: 190px;
+  height: 190px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 16px;
+  border: 2px solid var(--atg-amber);
+  box-shadow: 0 0 44px rgba(245, 166, 35, 0.3);
+  margin: 0 auto 1.6rem;
+}
+
 .heroBadge {
   display: inline-block;
   font-size: 0.8rem;

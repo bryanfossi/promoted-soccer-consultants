@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Newsletter from '@/components/Newsletter'
@@ -161,6 +162,7 @@ export default function Home() {
       <section className={`${styles.prodSection} ${styles.club}`}>
         <div className={styles.container}>
           <div className={styles.prodHead}>
+            <Image src="/clubstack-mark.png" alt="ClubStack" width={223} height={258} className={styles.markShield} />
             <span className={styles.sectionEyebrow}>ClubStack · runs the club</span>
             <h2 className={`serif ${styles.prodTagline}`}>Run your club. Not your inbox.</h2>
             <p>
@@ -224,6 +226,7 @@ export default function Home() {
       <section className={`${styles.prodSection} ${styles.gaffer}`}>
         <div className={styles.container}>
           <div className={styles.prodHead}>
+            <Image src="/gaffer-avatar.png" alt="The Gaffer" width={540} height={540} className={styles.markAvatar} />
             <span className={styles.sectionEyebrow}>Ask The Gaffer · preps the coach</span>
             <h2 className={`serif ${styles.prodTagline}`}>It already knows your team.</h2>
             <p>
@@ -282,6 +285,7 @@ export default function Home() {
       <section className={`${styles.prodSection} ${styles.fuse}`}>
         <div className={styles.container}>
           <div className={styles.prodHead}>
+            <Image src="/fuse-id-wordmark.png" alt="FUSE-ID" width={1304} height={336} className={styles.markWordmark} />
             <span className={styles.sectionEyebrow}>FUSE-ID · gets the family recruited</span>
             <h2 className={`serif ${styles.prodTagline}`}>
               The AI college recruiting platform for student-athletes — and the parents in their corner.

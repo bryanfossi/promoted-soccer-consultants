@@ -252,6 +252,31 @@
   margin-bottom: 3rem;
 }
 
+/* per-product brand marks in section headers */
+.markShield {
+  display: block;
+  height: 52px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.markWordmark {
+  display: block;
+  height: 34px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.markAvatar {
+  display: block;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--atg-amber);
+  margin-bottom: 1rem;
+}
+
 .prodTagline {
   font-size: clamp(1.9rem, 4vw, 2.9rem);
   font-weight: 400;

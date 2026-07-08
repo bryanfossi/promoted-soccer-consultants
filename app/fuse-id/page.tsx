@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import styles from './fuse-id.module.css'
@@ -214,9 +215,14 @@ export default function FuseId() {
       <section className={styles.hero}>
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
-            <div className={styles.wordmark} aria-label="FUSE-ID">
-              FUSE<span className={styles.wordmarkId}>-ID</span>
-            </div>
+            <Image
+              src="/fuse-id-wordmark.png"
+              alt="FUSE-ID"
+              width={1304}
+              height={336}
+              priority
+              className={styles.heroLogo}
+            />
             <div className={styles.heroBadge}>Live · Free to start · Athletes 13+</div>
             <h1 className="serif">
               The AI college recruiting platform for student-athletes — and the parents in their

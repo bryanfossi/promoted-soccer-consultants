@@ -828,7 +828,15 @@
   }
 }
 
-/* ---- FUSE-ID wordmark (color-only; master type, not a product font) ---- */
+/* ---- FUSE-ID hero logo ---- */
+.heroLogo {
+  display: block;
+  height: 62px;
+  width: auto;
+  margin: 0 auto 1.5rem;
+}
+
+/* ---- FUSE-ID wordmark (legacy text lockup; superseded by .heroLogo image) ---- */
 .wordmark {
   font-family: var(--font-archivo), system-ui, sans-serif;
   font-weight: 700;
