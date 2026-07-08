@@ -73,7 +73,7 @@ export default function Navbar() {
                 <a href="/fuse-id" onClick={closeMenu}>FUSE-ID</a>
               </li>
               <li>
-                <a href="/clubstack" onClick={closeMenu}>Clubstack</a>
+                <a href="/clubstack" onClick={closeMenu}>ClubStack</a>
               </li>
               <li>
                 <a href="/ask-the-gaffer" onClick={closeMenu}>Ask The Gaffer</a>

@@ -19,7 +19,7 @@ export default function Footer() {
         <div className={styles.footerSection}>
           <h4 className="serif">Products</h4>
           <a href="/fuse-id">FUSE-ID</a>
-          <a href="/clubstack">Clubstack</a>
+          <a href="/clubstack">ClubStack</a>
           <a href="/ask-the-gaffer">Ask The Gaffer</a>
         </div>
         <div className={styles.footerSection}>

@@ -3,14 +3,14 @@ import Footer from '@/components/Footer'
 import styles from './clubstack.module.css'
 
 export const metadata = {
-  title: 'Clubstack — Club Management Software',
+  title: 'ClubStack — Club Management Software',
   description:
-    "Clubstack is the only club management platform with a built-in recruiting layer. Registration, payments, rosters, scheduling, and communication — built for multi-sport clubs.",
+    "ClubStack is the only club management platform with a built-in recruiting layer. Registration, payments, rosters, scheduling, and communication — built for multi-sport clubs.",
   alternates: { canonical: '/clubstack' },
   openGraph: {
-    title: 'Clubstack | Promoted Sports Consultants',
+    title: 'ClubStack | Promoted Sports Consultants',
     description:
-      'Run your club. Not your inbox. Clubstack handles registration, payments, rosters, scheduling, and communication — with the only recruiting integration on the market.',
+      'Run your club. Not your inbox. ClubStack handles registration, payments, rosters, scheduling, and communication — with the only recruiting integration on the market.',
     url: 'https://www.promotedsoccerconsultants.com/clubstack',
     type: 'website',
   },
@@ -20,7 +20,7 @@ const softwareSchema = {
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
   '@id': 'https://www.promotedsoccerconsultants.com/clubstack#software',
-  name: 'Clubstack',
+  name: 'ClubStack',
   url: 'https://clubstack.online',
   applicationCategory: 'BusinessApplication',
   operatingSystem: 'Web, Progressive Web App',
@@ -41,7 +41,7 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.promotedsoccerconsultants.com' },
-    { '@type': 'ListItem', position: 2, name: 'Clubstack', item: 'https://www.promotedsoccerconsultants.com/clubstack' },
+    { '@type': 'ListItem', position: 2, name: 'ClubStack', item: 'https://www.promotedsoccerconsultants.com/clubstack' },
   ],
 }
 
@@ -163,9 +163,9 @@ const competitiveRows = [
   ['Team communication', true, 'Partial', true, 'Partial'],
   ['Tryout evaluation + bucketing', true, 'Partial', false, 'Partial'],
   ['Drag-and-drop roster builder', true, false, false, false],
-  ['Recruiting status dashboard', 'Clubstack only', false, false, false],
-  ['College coach contact log', 'Clubstack only', false, false, false],
-  ['Built by an active coach', 'Clubstack only', false, false, false],
+  ['Recruiting status dashboard', 'ClubStack only', false, false, false],
+  ['College coach contact log', 'ClubStack only', false, false, false],
+  ['Built by an active coach', 'ClubStack only', false, false, false],
   ['Progressive Web App (PWA)', true, false, 'Partial', false],
 ] as const
 
@@ -176,7 +176,7 @@ const cellRender = (cell: boolean | string) => {
   return <span className={styles.checkExclusive}>★ {cell}</span>
 }
 
-export default function Clubstack() {
+export default function ClubStack() {
   return (
     <main>
       <script
@@ -196,7 +196,7 @@ export default function Clubstack() {
             <div className={styles.heroBadge}>Coming Soon · Join the waitlist · founding-club pricing</div>
             <h1 className="serif">Run your club. Not your inbox.</h1>
             <p>
-              Clubstack handles registration, payments, rosters, scheduling, and communication —
+              ClubStack handles registration, payments, rosters, scheduling, and communication —
               and adds the only recruiting integration on the market. Built for multi-sport clubs
               by a coach who runs one.
             </p>
@@ -230,7 +230,7 @@ export default function Clubstack() {
           <p className={styles.subtitle}>
             Most clubs are stitched together from a registration platform that nobody likes, a
             spreadsheet for installment plans, an app for messaging, and a group text for
-            everything else. Clubstack replaces all of it.
+            everything else. ClubStack replaces all of it.
           </p>
           <div className={styles.painsGrid}>
             {pains.map((pain) => (
@@ -343,7 +343,7 @@ export default function Clubstack() {
         <div className={styles.container}>
           <h2 className="serif">Built for every sport. Built for every level.</h2>
           <p className={styles.subtitle}>
-            Clubstack is sport-agnostic at its core — registration, payments, rosters,
+            ClubStack is sport-agnostic at its core — registration, payments, rosters,
             scheduling, and communication don't care whether you're running soccer, volleyball,
             basketball, or lacrosse.
           </p>
@@ -362,7 +362,7 @@ export default function Clubstack() {
             </div>
           </div>
           <p className={styles.credibility}>
-            Clubstack was built first with competitive soccer clubs — the use case Bryan lives
+            ClubStack was built first with competitive soccer clubs — the use case Bryan lives
             every day as a coach. The platform expands sport by sport as each new program comes
             online.
           </p>
@@ -376,7 +376,7 @@ export default function Clubstack() {
             <div className={styles.differentiatorBadge}>The PSC differentiator</div>
             <h2 className="serif">The only club platform with a recruiting layer.</h2>
             <p>
-              Because no other platform is in the recruiting business. Clubstack's Recruiting
+              Because no other platform is in the recruiting business. ClubStack's Recruiting
               Integration Module gives staff a club-wide view of every player's recruiting status,
               division targets, last coach contact, and FUSE-ID enrollment — and gives families a
               clean check-in workflow to update what's actually happening with their player.
@@ -428,16 +428,16 @@ export default function Clubstack() {
       {/* Competitive Comparison */}
       <section className={styles.comparison}>
         <div className={styles.container}>
-          <h2 className="serif">How Clubstack compares</h2>
+          <h2 className="serif">How ClubStack compares</h2>
           <p className={styles.subtitle}>
-            What you get with Clubstack versus what the rest of the category offers.
+            What you get with ClubStack versus what the rest of the category offers.
           </p>
           <div className={styles.tableWrap}>
             <table className={styles.compareTable}>
               <thead>
                 <tr>
                   <th>Feature</th>
-                  <th className={styles.colUs}>Clubstack</th>
+                  <th className={styles.colUs}>ClubStack</th>
                   <th>GotSport</th>
                   <th>TeamSnap</th>
                   <th>SportsEngine</th>
@@ -465,7 +465,7 @@ export default function Clubstack() {
           <div className={styles.builtByBox}>
             <h2 className="serif">Built by someone who actually coaches at your level.</h2>
             <p>
-              Clubstack is built by Bryan Fossi — a current high school head coach and MLS Next
+              ClubStack is built by Bryan Fossi — a current high school head coach and MLS Next
               Academy coach. Every workflow in the platform exists because of a real frustration
               from a real Tuesday-night practice or Saturday-morning tournament. No
               outsiders-guessing-what-clubs-need product design.
@@ -479,7 +479,7 @@ export default function Clubstack() {
         <div className={styles.container}>
           <h2 className="serif">Want early access?</h2>
           <p>
-            Clubstack is launching soon. Join the waitlist for early access, founding-club
+            ClubStack is launching soon. Join the waitlist for early access, founding-club
             pricing, and a direct line to Bryan when your club comes online.
           </p>
           <div className={styles.heroCtas}>

@@ -19,7 +19,7 @@ const SITE_URL = 'https://www.promotedsoccerconsultants.com'
 const SITE_NAME = 'Promoted Sports Consultants'
 const SITE_LEGAL_NAME = 'Promoted Soccer Consultants, LLC'
 const DEFAULT_DESCRIPTION =
-  'PSC is a multi-sport recruiting and club-operations company: FUSE-ID for AI-powered college recruiting, Clubstack for running a club, plus Recruiting Services and Club Consulting from a former college coach.'
+  'PSC is a multi-sport recruiting and club-operations company: FUSE-ID for AI-powered college recruiting, ClubStack for running a club, plus Recruiting Services and Club Consulting from a former college coach.'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
