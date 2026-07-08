@@ -6,7 +6,7 @@ Full brand system: [docs/brand/psc-brand-kit.md](docs/brand/psc-brand-kit.md). P
 
 ## Naming traps (non-negotiable)
 - **FUSE-ID = the software platform ONLY.** The human packages are **Recruiting Services** (tiers: Basic / Premier / Elite). Never call the packages FUSE-ID. Flag any legacy content that does.
-- Product names are exact: **FUSE-ID**, **Clubstack**, **Ask The Gaffer**.
+- Product names are exact: **FUSE-ID**, **ClubStack**, **Ask The Gaffer**.
 - **Display brand:** Promoted Sports Consultants (PSC). **Legal entity** (disclaimers + copyright only): **Promoted Soccer Consultants, LLC**. Keep both exactly — the mismatch is intentional.
 
 ## Product status + launch (verify before writing "live"/"coming soon")

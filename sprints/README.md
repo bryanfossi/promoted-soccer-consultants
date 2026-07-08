@@ -17,7 +17,7 @@ Converts promotedsoccerconsultants.com into the parent/portfolio hub for the **t
 - Run in order **A → F**. A establishes tokens/type the later sprints depend on.
 - B is additive and could run any time after A, but nav/sitemap it touches are re-touched in D/E — keep the order to avoid churn.
 - C absorbs the old two-product Sprint 3 (FUSE-ID flip + `/ai-assistant` sunset) — do not ship the archived version.
-- E owns the sitewide `Clubstack → ClubStack` casing sweep and the packages/platform naming reconciliation.
+- E owns the sitewide ClubStack casing sweep and the packages/platform naming reconciliation.
 - **Commit each sprint separately. Summarize after each sprint before starting the next.**
 
 ## Conventions

@@ -9,7 +9,7 @@ Version 2.1 · Three-product suite · FUSE-ID green correction · ClubStack cano
 ## 00 — What changed (read first)
 
 - **FUSE-ID accent is GREEN, not blue.** An earlier blue-accent spec is superseded — FUSE-ID is `#22C55E` (light) / `#4ADE80` (dark). All blue references are removed. The green already ships on the site and stands.
-- **ClubStack is the canonical spelling** (camelCase). Wordmark: "Club" navy, "Stack" gold. The site-wide code sweep from the legacy `Clubstack` spelling is scoped to **Sprint E**; legal disclaimer text stays verbatim.
+- **ClubStack is the canonical spelling** (camelCase). Wordmark: "Club" navy, "Stack" gold. The site-wide casing sweep completed in **Sprint E**; the codebase (including PSC's own legal disclaimer) carries zero mis-cased instances.
 - **PSC.com typography is Archivo + Inter** sitewide — supersedes Crimson Pro + Work Sans. Font migration is a **Sprint A** task.
 - Master palette moved from the v1.0 raster-logo navy/silver to v3 values (navy `#1A3A5C`, gold `#C9A227`). Live code still ships v1.0 values — see **Codebase Drift** (§02).
 
@@ -88,7 +88,7 @@ Full token sets live in each per-product kit; summary here.
 | Master navy (`--primary-green`, `--dark-navy`) | `#1A2332` | `#1A3A5C` (bg → `#0F1A2E`) | A |
 | Gold (`--accent-gold`) | `#D4A574` | `#C9A227` | A |
 | Sitewide fonts | Crimson Pro + Work Sans | Archivo + Inter | A |
-| ClubStack spelling in app/sitemap/metadata | `Clubstack` | `ClubStack` | E |
+| ClubStack casing (app/sitemap/metadata/disclaimer) | swept ✅ | `ClubStack` | E (done) |
 | FUSE-ID green | `#22C55E` / `#4ADE80` ✅ ships | *(matches — stands)* | — |
 
 `--primary-green` / `--secondary-green` are legacy token *names* kept to avoid a sweeping rename; only the *values* change in Sprint A.
@@ -261,10 +261,10 @@ Platforms: **LinkedIn** primary · **Instagram** secondary · **YouTube** long g
 **FUSE-ID:**
 > FUSE-ID is an AI-powered college recruiting platform operated by Promoted Soccer Consultants, LLC. FUSE-ID is an educational tool and does not act as an agent, guarantee scholarships, roster positions, or recruiting outcomes, and does not communicate with college coaches on behalf of athletes.
 
-**Clubstack:**
-> Clubstack is a club management software platform operated by Promoted Soccer Consultants, LLC. Clubstack is a business operations tool for clubs and is not a youth-protection, background-check, or sanctioning organization.
+**ClubStack:**
+> ClubStack is a club management software platform operated by Promoted Soccer Consultants, LLC. ClubStack is a business operations tool for clubs and is not a youth-protection, background-check, or sanctioning organization.
 
-*(Disclaimer text is quoted verbatim from the approved v3 legal language, which uses the "Clubstack" spelling. Keep it exact; the display/wordmark spelling is "ClubStack.")*
+*("Verbatim" locks the substance of this disclaimer, not casing — it is PSC's own legal text, so the product renders as "ClubStack" here too. The codebase carries zero mis-cased instances.)*
 
 **Recruiting Services & Club Consulting:**
 > Recruiting Services and Club Consulting are education and consulting services. We do not act as agents, do not guarantee athletic scholarships, roster positions, or recruitment outcomes, and do not negotiate with college coaches on behalf of athletes. All guidance is provided for educational purposes and in accordance with NCAA, NAIA, and NJCAA rules.

@@ -8,7 +8,9 @@
 
 ## Goal
 
-Land v3 copy into the existing services routes **in place** (no URL changes), add the Custom Club Solutions block, retarget `/locations/*` CTAs, and run the sitewide naming reconciliation.
+Land v3 copy into the existing services routes **in place** (no URL changes), add the Custom Club Solutions block, and run the sitewide naming reconciliation.
+
+> **Scope note (retroactive):** the `/locations/*` CTA-retargeting item was removed — those pages are **not yet built** in this repo. They live in the GSC/GBP SEO strategy as a future sprint, with FUSE-ID as the lead offering per the SEO plan.
 
 ---
 
@@ -17,22 +19,20 @@ Land v3 copy into the existing services routes **in place** (no URL changes), ad
 **In scope**
 - **`/recruiting-services`** and **`/club-consulting`**: v3 copy into the existing routes — **do NOT restructure URLs** (preserve Stripe + Calendar links, SEO equity).
 - **Custom Club Solutions** block on `/club-consulting`: "PSC scopes custom engagements for problems a club can't solve off the shelf — **the CTA is always the conversation, never a promised fix**." Where ClubStack overlaps IT Solutions, ClubStack is the product answer; consulting is what software can't do.
-- **`/locations/*`**: retarget CTAs to FUSE-ID free signup (https://fuse-id.online/register) + the free consultation.
 - **Sitewide naming sweep:**
   - Packages = **Recruiting Services** (never FUSE-ID); **FUSE-ID = platform only**.
-  - **`Clubstack → ClubStack`** casing across `app/`, `components/`, `app/sitemap.ts`, and all metadata/OG/schema strings. **Exception:** the verbatim legal disclaimer text keeps "Clubstack" (approved legal string) — leave those untouched.
+  - **ClubStack** casing across `app/`, `components/`, `app/sitemap.ts`, and all metadata/OG/schema strings — **including PSC's own legal disclaimer** (casing corrected in Sprint F; "verbatim" locks substance, not casing). Zero mis-cased instances remain in the codebase.
   - Display brand "Promoted Sports Consultants"; legal entity "Promoted Soccer Consultants, LLC" only in disclaimers/copyright.
 
 **Out of scope**
 - New pages / homepage structure (B–D). Final JSON-LD + redirect map + build QA (F).
 
 ## Files touched
-EDIT `app/recruiting-services/page.tsx`, `app/club-consulting/page.tsx`, `app/locations/**`, plus every file surfaced by the `Clubstack` grep (nav, footer, components, sitemap, layout metadata) — excluding verbatim disclaimer strings.
+EDIT `app/club-consulting/page.tsx` (+ module CSS), plus every file surfaced by the ClubStack casing grep (nav, footer, layout metadata, `app/clubstack/page.tsx`). `/recruiting-services` needed no edits (already v3-compliant). No `app/locations/**` — not built.
 
 ## Acceptance criteria
 - [ ] `npm run build` clean.
 - [ ] Services routes keep their URLs; Stripe + Calendar links intact and working.
 - [ ] Custom Club Solutions block present with conversation-only CTA.
-- [ ] `/locations/*` CTAs point to FUSE-ID free signup + consultation.
-- [ ] `grep -rn "Clubstack" app/ components/` returns only verbatim legal-disclaimer occurrences; everywhere else reads "ClubStack."
+- [ ] A grep for the mis-cased product spelling across `app/` and `components/` returns **zero** results (including the disclaimer).
 - [ ] No content calls the consulting packages "FUSE-ID."

@@ -2,7 +2,7 @@
 **Product brand kit — the club management platform**
 Canonical tokens · aligned to system-prompt v3
 
-> **Canonical spelling: `ClubStack`** (camelCase — Bryan's call). The wordmark renders **"Club" in navy, "Stack" in gold**. The site-wide code sweep from the legacy `Clubstack` spelling is scoped to **Sprint E**.
+> **Canonical spelling: `ClubStack`** (camelCase — Bryan's call). The wordmark renders **"Club" in navy, "Stack" in gold**. The site-wide casing sweep completed in **Sprint E**; the codebase carries zero mis-cased instances.
 >
 > Scope: this kit governs ClubStack's own surfaces — `clubstack.online` and the `/clubstack` section of PSC.com. On PSC.com, ClubStack contributes **color only**; PSC.com typography (Archivo + Inter) always wins. See [`psc-brand-kit.md`](psc-brand-kit.md) and [`../../CLAUDE.md`](../../CLAUDE.md).
 
@@ -73,6 +73,6 @@ Flat monthly by org size, no per-player fees. Annual ≈ 15% off.
 
 ## Legal disclaimer (verbatim)
 
-> Clubstack is a club management software platform operated by Promoted Soccer Consultants, LLC. Clubstack is a business operations tool for clubs and is not a youth-protection, background-check, or sanctioning organization.
+> ClubStack is a club management software platform operated by Promoted Soccer Consultants, LLC. ClubStack is a business operations tool for clubs and is not a youth-protection, background-check, or sanctioning organization.
 
-*(Note: the legal disclaimer text is quoted verbatim from the approved v3 language, which uses the "Clubstack" spelling. Keep disclaimer text exactly as approved; the display/wordmark spelling is "ClubStack.")*
+*("Verbatim" locks the substance, not casing — this is PSC's own legal text, so the product renders as "ClubStack" here too (updated in Sprint F).)*

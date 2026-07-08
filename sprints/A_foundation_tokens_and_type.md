@@ -26,7 +26,7 @@ Reconcile the live design system to the canonical brand kits: master palette, pr
 **Out of scope** (later sprints)
 - New `/ask-the-gaffer` page and nav/footer/sitemap entries → **B**.
 - `/fuse-id` rewrite → **C**. Full homepage section/layout rebuild → **D**.
-- Sitewide `Clubstack → ClubStack` casing sweep and packages/platform naming → **E**.
+- Sitewide ClubStack casing sweep and packages/platform naming → **E**.
 
 ---
 
